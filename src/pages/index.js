@@ -12,8 +12,27 @@ export default function Home() {
     flexDirection: "column",
   }
 
+  const backgroundStyle = {
+    position: "absolute",
+    top: "0",
+    left: "0",
+    height: "100vh",
+    width: "100vw",
+    backgroundImage: `url(
+      "https://images.unsplash.com/photo-1524902429158-cb46f7caddbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+    )`,
+    zIndex: "-10",
+    transform: "scaleY(-1)",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+  }
+
   const titleStyle = {
-    margin: "6rem",
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -100%)",
+    color: "white",
   }
 
   return (
@@ -21,6 +40,7 @@ export default function Home() {
       <h1 style={titleStyle}>
         Sam Morgan<br></br>UK/USA Based Web Developer
       </h1>
+      <div style={backgroundStyle} />
     </div>
   )
 }
