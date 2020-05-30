@@ -31,7 +31,7 @@ export default function Home() {
     position: "absolute",
     top: "40%",
     color: "white",
-    fontSize: "2rem",
+    fontSize: "3rem",
   }
 
   return (
