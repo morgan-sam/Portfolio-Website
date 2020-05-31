@@ -11,17 +11,21 @@ const NavButton = props => {
     border: "1px solid white",
     background: "none",
     overflow: "hidden",
+    transition: "0.35s color ease-in-out",
   }
 
   const backgroundStyle = {
     position: "absolute",
     top: "0",
     left: "0",
-    width: "100%",
-    height: "100%",
+    width: "200%",
+    height: "250%",
     backgroundColor: "white",
     zIndex: "-1",
-    transform: hover ? "translate(0%, 0%)" : "translate(100%, 100%)",
+    transform: hover
+      ? "rotate(30deg) translate(-20%, 0%)"
+      : "rotate(30deg) translate(-50%, 150%)",
+    transition: "0.35s transform ease-in-out",
   }
 
   return (
