@@ -1,6 +1,8 @@
-import React from "react"
+import React, { useState } from "react"
 
 const NavButton = props => {
+  const [hover, setHover] = useState(false)
+
   const navButtonStyle = {
     margin: "0.4rem 0.6rem",
     padding: "0.6rem 1.4rem",
@@ -9,7 +11,18 @@ const NavButton = props => {
     background: "none",
   }
 
-  return <button style={navButtonStyle}>{props.text}</button>
+  console.log(hover)
+
+  return (
+    <button
+      onMouseOver={() => setHover(true)}
+      onFocus={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      style={navButtonStyle}
+    >
+      {props.text}
+    </button>
+  )
 }
 
 export default NavButton
