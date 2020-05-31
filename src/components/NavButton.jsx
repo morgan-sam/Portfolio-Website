@@ -29,6 +29,7 @@ const NavButton = props => {
       onMouseOver={() => setHover(true)}
       onFocus={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
+      onBlur={() => setHover(false)}
       style={navButtonStyle}
     >
       {props.text}
