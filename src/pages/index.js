@@ -1,4 +1,5 @@
 import React from "react"
+import TopNavBar from "../components/TopNavBar"
 
 export default function Home() {
   const homeStyle = {
@@ -39,6 +40,7 @@ export default function Home() {
       <h1 style={titleStyle}>
         Sam Morgan<br></br>UK/USA Based Web Developer
       </h1>
+      <TopNavBar></TopNavBar>
       <div style={backgroundStyle} />
     </div>
   )
