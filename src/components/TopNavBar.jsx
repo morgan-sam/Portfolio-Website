@@ -1,4 +1,5 @@
 import React from "react"
+import NavButton from "./NavButton"
 
 const TopNavBar = props => {
   const buttons = ["home", "about", "blog", "contact"]
@@ -9,17 +10,13 @@ const TopNavBar = props => {
     right: "1rem",
   }
 
-  const navButtonStyle = {
-    margin: "0.4rem 0.6rem",
-    padding: "0.6rem 1.4rem",
-    color: "white",
-    border: "1px solid white",
-    background: "none",
-  }
-
-  const navButton = name => <button style={navButtonStyle}>{name}</button>
-
-  return <div style={navBarStyle}>{buttons.map(el => navButton(el))}</div>
+  return (
+    <div style={navBarStyle}>
+      {buttons.map(el => (
+        <NavButton text={el} />
+      ))}
+    </div>
+  )
 }
 
 export default TopNavBar
