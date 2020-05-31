@@ -20,7 +20,7 @@ export default function Home() {
     height: "100vh",
     width: "100vw",
     backgroundImage: `url(
-      "https://images.unsplash.com/photo-1524902429158-cb46f7caddbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+      "https://images.unsplash.com/photo-1590664095641-7fa05f689813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
     )`,
     zIndex: "-10",
     transform: "scaleY(-1)",

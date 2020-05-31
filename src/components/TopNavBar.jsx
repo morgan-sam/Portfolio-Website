@@ -12,6 +12,9 @@ const TopNavBar = props => {
   const navButtonStyle = {
     margin: "0.4rem 0.6rem",
     padding: "0.6rem 1.4rem",
+    color: "white",
+    border: "1px solid white",
+    background: "none",
   }
 
   const navButton = name => <button style={navButtonStyle}>{name}</button>
