@@ -13,7 +13,7 @@ export default function Home() {
 		top: '0',
 		left: '0',
 		height: '200vh',
-		width: '100vw',
+		width: '100%',
 		display: 'flex',
 		alignItems: 'center',
 		flexDirection: 'column'
@@ -24,7 +24,7 @@ export default function Home() {
 		top: '0',
 		left: '0',
 		height: '100vh',
-		width: '100vw',
+		width: '100%',
 		zIndex: '-10',
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'cover',
