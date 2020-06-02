@@ -25,11 +25,9 @@ export default function Home() {
 		left: '0',
 		height: '100vh',
 		width: '100vw',
-		backgroundImage: `url(${backgroundURL})`,
 		zIndex: '-10',
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'cover',
-
 		backgroundImage: `linear-gradient(to top,  #fff, rgba(45, 13, 82, 0.5),  #000 90%), url(${backgroundURL})`,
 		backgroundColor: 'rgba(45, 13, 82, 0.7)',
 		backgroundBlendMode: 'screen',
