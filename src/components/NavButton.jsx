@@ -7,11 +7,11 @@ const NavButton = (props) => {
 		position: 'relative',
 		margin: '0.4rem 0.6rem',
 		padding: '0.6rem 1.4rem',
-		color: hover ? 'black' : 'white',
-		border: '1px solid white',
+		color: hover ? 'black' : props.color,
+		border: `1px solid ${props.color}`,
 		background: 'none',
 		overflow: 'hidden',
-		transition: '0.35s color ease-in-out',
+		transition: '0.35s color ease-in-out, 0.35s border ease-in-out',
 		cursor: 'pointer'
 	};
 

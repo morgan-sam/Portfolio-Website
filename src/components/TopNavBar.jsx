@@ -10,7 +10,7 @@ const TopNavBar = (props) => {
 		right: '1rem'
 	};
 
-	return <div style={navBarStyle}>{buttons.map((el) => <NavButton text={el} />)}</div>;
+	return <div style={navBarStyle}>{buttons.map((el) => <NavButton text={el} color={props.color} />)}</div>;
 };
 
 export default TopNavBar;
