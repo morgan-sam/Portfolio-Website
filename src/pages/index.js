@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import TopNavBar from '../components/TopNavBar';
 
 export default function Home() {
+	const [ scrollPosition, setSrollPosition ] = useState(0);
+
 	const backgroundURL =
 		'https://images.unsplash.com/photo-1590664095641-7fa05f689813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80';
 
@@ -39,6 +41,11 @@ export default function Home() {
 		color: 'white',
 		fontSize: '2.2rem'
 	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', () => setSrollPosition(window.pageYOffset));
+		return () => window.removeEventListener('scroll', () => setSrollPosition(window.pageYOffset));
+	}, []);
 
 	return (
 		<div style={homeStyle}>
