@@ -6,7 +6,7 @@ export default function Home() {
 		position: 'absolute',
 		top: '0',
 		left: '0',
-		height: '100vh',
+		height: '200vh',
 		width: '100vw',
 		display: 'flex',
 		alignItems: 'center',
@@ -33,6 +33,7 @@ export default function Home() {
 		backgroundBlendMode: 'screen',
 		filter: 'brightness(0.8) saturate(1.2)'
 	};
+
 	const titleStyle = {
 		position: 'absolute',
 		top: '48vh',

@@ -1,22 +1,16 @@
-import React from "react"
-import NavButton from "./NavButton"
+import React from 'react';
+import NavButton from './NavButton';
 
-const TopNavBar = props => {
-  const buttons = ["home", "about", "blog", "contact"]
+const TopNavBar = (props) => {
+	const buttons = [ 'home', 'about', 'blog', 'contact' ];
 
-  const navBarStyle = {
-    position: "absolute",
-    top: "1rem",
-    right: "1rem",
-  }
+	const navBarStyle = {
+		position: 'fixed',
+		top: '1rem',
+		right: '1rem'
+	};
 
-  return (
-    <div style={navBarStyle}>
-      {buttons.map(el => (
-        <NavButton text={el} />
-      ))}
-    </div>
-  )
-}
+	return <div style={navBarStyle}>{buttons.map((el) => <NavButton text={el} />)}</div>;
+};
 
-export default TopNavBar
+export default TopNavBar;
