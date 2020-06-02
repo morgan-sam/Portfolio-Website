@@ -35,7 +35,7 @@ export default function Home() {
 	};
 	const titleStyle = {
 		position: 'absolute',
-		top: '48%',
+		top: '48vh',
 		color: 'white',
 		fontSize: '2.2rem'
 	};
