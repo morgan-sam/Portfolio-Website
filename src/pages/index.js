@@ -2,6 +2,9 @@ import React from 'react';
 import TopNavBar from '../components/TopNavBar';
 
 export default function Home() {
+	const backgroundURL =
+		'https://images.unsplash.com/photo-1590664095641-7fa05f689813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80';
+
 	const homeStyle = {
 		position: 'absolute',
 		top: '0',
@@ -19,16 +22,12 @@ export default function Home() {
 		left: '0',
 		height: '100vh',
 		width: '100vw',
-		backgroundImage: `url(
-      "https://images.unsplash.com/photo-1590664095641-7fa05f689813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-    )`,
+		backgroundImage: `url(${backgroundURL})`,
 		zIndex: '-10',
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'cover',
 
-		backgroundImage: `linear-gradient(to top,  #fff, rgba(45, 13, 82, 0.5),  #000 90%), url(
-      "https://images.unsplash.com/photo-1590664095641-7fa05f689813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-    )`,
+		backgroundImage: `linear-gradient(to top,  #fff, rgba(45, 13, 82, 0.5),  #000 90%), url(${backgroundURL})`,
 		backgroundColor: 'rgba(45, 13, 82, 0.7)',
 		backgroundBlendMode: 'screen',
 		filter: 'brightness(0.8) saturate(1.2)'
