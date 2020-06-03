@@ -11,7 +11,66 @@ const TopNavBar = (props) => {
 		zIndex: '10'
 	};
 
-	return <div style={navBarStyle}>{buttons.map((el) => <NavButton text={el} color={props.color} />)}</div>;
+	const getCurrentBtnStyle = (section) => {
+		if (section === 0)
+			return {
+				default: {
+					text: 'white',
+					border: 'white',
+					background: 'transparent'
+				},
+				hover: {
+					text: 'black',
+					border: 'white',
+					background: 'white'
+				}
+			};
+		else if (section === 1)
+			return {
+				default: {
+					text: 'black',
+					border: 'black',
+					background: 'transparent'
+				},
+				hover: {
+					text: 'black',
+					border: 'black',
+					background: 'white'
+				}
+			};
+		else if (section === 2)
+			return {
+				default: {
+					text: 'black',
+					border: 'black',
+					background: '#fff'
+				},
+				hover: {
+					text: 'black',
+					border: 'black',
+					background: 'white'
+				}
+			};
+		else if (section === 3)
+			return {
+				default: {
+					text: '#2b0e0e',
+					border: '#2b0e0e',
+					background: '#f6eded'
+				},
+				hover: {
+					text: 'black',
+					border: 'white',
+					background: 'white'
+				}
+			};
+	};
+
+	return (
+		<div style={navBarStyle}>
+			{buttons.map((el) => <NavButton text={el} colors={getCurrentBtnStyle(props.currentSection)} />)}
+		</div>
+	);
 };
 
 export default TopNavBar;

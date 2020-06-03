@@ -8,7 +8,7 @@ import { homeStyle } from '../styles/homePage';
 
 export default function Home() {
 	const [ scrollPosition, setSrollPosition ] = useState(0);
-	const [ navColor, setNavColor ] = useState(0);
+	const [ currentSection, setCurrentSection ] = useState(0);
 
 	useEffect(() => {
 		window.addEventListener('scroll', () => setSrollPosition(window.pageYOffset));
@@ -17,16 +17,17 @@ export default function Home() {
 
 	useEffect(
 		() => {
-			const browserZoomLevel = Math.round(window.devicePixelRatio * 100);
-			if (scrollPosition > (window.outerHeight - 145) / (browserZoomLevel / 100)) setNavColor('black');
-			else setNavColor('white');
+			if (scrollPosition < 940) setCurrentSection(0);
+			else if (scrollPosition < 1910) setCurrentSection(1);
+			else if (scrollPosition < 2890) setCurrentSection(2);
+			else setCurrentSection(3);
 		},
 		[ scrollPosition ]
 	);
 
 	return (
 		<div style={homeStyle}>
-			<TopNavBar color={navColor} />
+			<TopNavBar currentSection={currentSection} />
 			<FirstSection />
 			<SecondSection />
 			<ThirdSection />
