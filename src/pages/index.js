@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import TopNavBar from '../components/TopNavBar';
 import FirstSection from '../components/FirstSection';
 import SecondSection from '../components/SecondSection';
+import ThirdSection from '../components/ThirdSection';
 import { homeStyle } from '../styles/homePage';
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
 			<TopNavBar color={navColor} />
 			<FirstSection />
 			<SecondSection />
+			<ThirdSection />
 		</div>
 	);
 }
