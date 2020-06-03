@@ -74,7 +74,7 @@ export default function Home() {
 							left: `${50 + cardGapPercentage}%`,
 							transform: 'translateX(-50%)'
 						}}
-						title={'Projects'}
+						title={'Tools'}
 						text={
 							'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper neque quis libero vehicula molestie. Nulla facilisi. Nunc sollicitudin mauris ac lorem vestibulum sagittis.'
 						}
