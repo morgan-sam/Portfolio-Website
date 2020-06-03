@@ -78,7 +78,7 @@ export default function Home() {
 						text={[
 							'Using:',
 							'HTML, CSS, JavaScript, React, PostgreSQL, Webpack, Jest, Linux',
-							'Used:',
+							'Also used:',
 							'MongoDB, Python, Bash'
 						]}
 					/>
