@@ -3,6 +3,7 @@ import TopNavBar from '../components/TopNavBar';
 import FirstSection from '../components/FirstSection';
 import SecondSection from '../components/SecondSection';
 import ThirdSection from '../components/ThirdSection';
+import FourthSection from '../components/FourthSection';
 import { homeStyle } from '../styles/homePage';
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
 			<FirstSection />
 			<SecondSection />
 			<ThirdSection />
+			<FourthSection />
 		</div>
 	);
 }
