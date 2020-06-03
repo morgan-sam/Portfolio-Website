@@ -1,10 +1,12 @@
 import React from 'react';
 
 const Card = (props) => {
+	const { title, text, style } = props;
+
 	const cardStyle = {
 		position: 'relative',
-		height: '26%',
-		width: '14%',
+		height: style.height ? style.height : 'auto',
+		width: style.width ? style.width : 'auto',
 		border: '5px solid #444',
 		borderRadius: '10%',
 		boxShadow: '6px 10px #888',
@@ -13,7 +15,7 @@ const Card = (props) => {
 	};
 
 	const titleStyle = {
-		margin: '1rem auto',
+		margin: '1.5rem auto 0 auto',
 		display: 'block',
 		textAlign: 'center',
 		fontSize: '2rem',
@@ -22,11 +24,12 @@ const Card = (props) => {
 
 	const textStyle = {
 		display: 'block',
-		margin: '1.5rem auto',
+		margin: '0.5rem auto 1.5rem auto',
 		width: '80%',
 		fontSize: '1.2rem',
 		boxSizing: 'border-box',
-		overflow: 'hidden'
+		overflow: 'hidden',
+		padding: '1rem'
 	};
 
 	const fadeOverlayStyle = {
@@ -41,10 +44,9 @@ const Card = (props) => {
 
 	return (
 		<div style={cardStyle}>
-			<div style={titleStyle}>Hello</div>
+			<div style={titleStyle}>{title}</div>
 			<div style={textStyle}>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum aperiam facere suscipit eveniet nisi
-				blanditiis consectetur!
+				{text}
 				<div style={fadeOverlayStyle} />
 			</div>
 		</div>

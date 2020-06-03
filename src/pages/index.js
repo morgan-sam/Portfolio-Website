@@ -31,7 +31,13 @@ export default function Home() {
 				<div style={backgroundStyle} />
 			</div>
 			<div style={middleSectionStyle}>
-				<Card />
+				<Card
+					style={{ width: '17rem', height: 'auto' }}
+					title={'Skills'}
+					text={
+						'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper neque quis libero vehicula molestie. Nulla facilisi. Nunc sollicitudin mauris ac lorem vestibulum sagittis.'
+					}
+				/>
 			</div>
 		</div>
 	);
