@@ -7,6 +7,8 @@ export default function Home() {
 	const [ scrollPosition, setSrollPosition ] = useState(0);
 	const [ navColor, setNavColor ] = useState(0);
 
+	const cardGap = '15%';
+
 	useEffect(() => {
 		window.addEventListener('scroll', () => setSrollPosition(window.pageYOffset));
 		return () => window.removeEventListener('scroll', () => setSrollPosition(window.pageYOffset));
@@ -35,7 +37,7 @@ export default function Home() {
 				<Card
 					style={{
 						width: '17rem',
-						left: '10%'
+						left: `${cardGap}`
 					}}
 					title={'Bio'}
 					text={
@@ -43,14 +45,14 @@ export default function Home() {
 					}
 				/>
 				<Card
-					style={{ width: '17rem', left: '-10%' }}
+					style={{ width: '17rem', left: `-${cardGap}` }}
 					title={'Skills'}
 					text={
 						'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper neque quis libero vehicula molestie. Nulla facilisi. Nunc sollicitudin mauris ac lorem vestibulum sagittis.'
 					}
 				/>
 				<Card
-					style={{ width: '17rem', left: '10%' }}
+					style={{ width: '17rem', left: `${cardGap}` }}
 					title={'Projects'}
 					text={
 						'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper neque quis libero vehicula molestie. Nulla facilisi. Nunc sollicitudin mauris ac lorem vestibulum sagittis.'
