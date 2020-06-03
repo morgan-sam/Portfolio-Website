@@ -1,4 +1,4 @@
-export const topSectionStyle = {
+export const firstSectionStyle = {
 	display: 'block',
 	height: '100vh',
 	width: '100%',
@@ -8,7 +8,7 @@ export const topSectionStyle = {
 	flexDirection: 'column'
 };
 
-export const middleSectionStyle = {
+export const secondSectionStyle = {
 	display: 'block',
 	height: '100vh',
 	width: '100%',

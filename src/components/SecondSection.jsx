@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../components/Card';
-import { middleSectionStyle } from '../styles/homePage';
+import { secondSectionStyle } from '../styles/homePage';
 
 const cardGapPercentage = 25;
 
@@ -12,7 +12,7 @@ const cardStyle = {
 
 const SecondSection = () => {
 	return (
-		<div style={middleSectionStyle}>
+		<div style={secondSectionStyle}>
 			<div style={{ position: 'absolute', height: '50%', width: '5px', backgroundColor: '#444' }} />
 			<div style={{ position: 'relative', display: 'block', margin: '0 auto', width: '50rem', height: '75%' }}>
 				<Card
