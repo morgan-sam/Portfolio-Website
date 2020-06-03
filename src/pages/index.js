@@ -9,6 +9,12 @@ export default function Home() {
 
 	const cardGapPercentage = 25;
 
+	const cardStyle = {
+		width: '17rem',
+		height: '17rem',
+		position: ' absolute'
+	};
+
 	useEffect(() => {
 		window.addEventListener('scroll', () => setSrollPosition(window.pageYOffset));
 		return () => window.removeEventListener('scroll', () => setSrollPosition(window.pageYOffset));
@@ -39,9 +45,7 @@ export default function Home() {
 				>
 					<Card
 						style={{
-							width: '17rem',
-							height: '17rem',
-							position: ' absolute',
+							...cardStyle,
 							top: '0',
 							left: `${50 + cardGapPercentage}%`,
 							transform: 'translateX(-50%)'
@@ -53,9 +57,7 @@ export default function Home() {
 					/>
 					<Card
 						style={{
-							width: '17rem',
-							height: '17rem',
-							position: ' absolute',
+							...cardStyle,
 							top: '50%',
 							left: `${50 - cardGapPercentage}%`,
 							transform: 'translate(-50%,-50%)'
@@ -67,9 +69,7 @@ export default function Home() {
 					/>
 					<Card
 						style={{
-							width: '17rem',
-							height: '17rem',
-							position: ' absolute',
+							...cardStyle,
 							bottom: '0',
 							left: `${50 + cardGapPercentage}%`,
 							transform: 'translateX(-50%)'
