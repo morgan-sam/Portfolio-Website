@@ -30,7 +30,7 @@ const contactTextStyle = {
 	fontSize: '1.3rem',
 	margin: '0.35rem',
 	textAlign: 'center',
-	backgroundColor: '#444',
+	backgroundColor: '#555',
 	color: 'white'
 };
 
