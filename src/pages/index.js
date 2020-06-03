@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import TopNavBar from '../components/TopNavBar';
 import Card from '../components/Card';
-import { topSectionStyle, middleSectionStyle, homeStyle, backgroundStyle, titleStyle } from '../styles/homePage';
+import FirstSection from '../components/FirstSection';
+import { middleSectionStyle, homeStyle } from '../styles/homePage';
 
 export default function Home() {
 	const [ scrollPosition, setSrollPosition ] = useState(0);
@@ -32,12 +33,7 @@ export default function Home() {
 	return (
 		<div style={homeStyle}>
 			<TopNavBar color={navColor} />
-			<div style={topSectionStyle}>
-				<div style={titleStyle}>
-					Sam Morgan<br />UK/USA Front End Developer
-				</div>
-				<div style={backgroundStyle} />
-			</div>
+			<FirstSection />
 			<div style={middleSectionStyle}>
 				<div style={{ position: 'absolute', height: '50%', width: '5px', backgroundColor: '#444' }} />
 				<div
