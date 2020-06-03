@@ -4,6 +4,7 @@ export const topSectionStyle = {
 	width: '100%',
 	display: 'flex',
 	alignItems: 'center',
+	justifyContent: 'center',
 	flexDirection: 'column'
 };
 
@@ -11,7 +12,11 @@ export const middleSectionStyle = {
 	display: 'block',
 	height: '100vh',
 	width: '100%',
-	backgroundColor: '#eee'
+	backgroundColor: '#eee',
+	display: 'flex',
+	alignItems: 'center',
+	justifyContent: 'center',
+	flexDirection: 'column'
 };
 
 const backgroundURL =
@@ -23,6 +28,9 @@ export const homeStyle = {
 };
 
 export const backgroundStyle = {
+	position: 'absolute',
+	top: '0',
+	left: '0',
 	height: '100vh',
 	width: '100%',
 	zIndex: '-10',
@@ -35,8 +43,6 @@ export const backgroundStyle = {
 };
 
 export const titleStyle = {
-	position: 'absolute',
-	top: '48vh',
 	color: 'white',
 	fontSize: '2.2rem'
 };

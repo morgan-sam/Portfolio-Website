@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import TopNavBar from '../components/TopNavBar';
+import Card from '../components/Card';
 import { topSectionStyle, middleSectionStyle, homeStyle, backgroundStyle, titleStyle } from '../styles/homePage';
 
 export default function Home() {
@@ -24,13 +25,13 @@ export default function Home() {
 		<div style={homeStyle}>
 			<TopNavBar color={navColor} />
 			<div style={topSectionStyle}>
-				<h1 style={titleStyle}>
+				<div style={titleStyle}>
 					Sam Morgan<br />UK/USA Based Web Developer
-				</h1>
+				</div>
 				<div style={backgroundStyle} />
 			</div>
 			<div style={middleSectionStyle}>
-				<div style={{ color: 'red' }}>2nd Section</div>
+				<Card />
 			</div>
 		</div>
 	);
