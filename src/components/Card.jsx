@@ -5,13 +5,14 @@ const Card = (props) => {
 
 	const cardStyle = {
 		position: 'relative',
-		height: style.height ? style.height : 'auto',
-		width: style.width ? style.width : 'auto',
 		border: '5px solid #444',
 		borderRadius: '10%',
 		boxShadow: '6px 10px #888',
 		backgroundColor: '#fff',
-		overflow: 'hidden'
+		overflow: 'hidden',
+		...style,
+		height: style.height ? style.height : 'auto',
+		width: style.width ? style.width : 'auto'
 	};
 
 	const titleStyle = {

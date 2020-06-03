@@ -32,8 +32,25 @@ export default function Home() {
 			</div>
 			<div style={middleSectionStyle}>
 				<Card
-					style={{ width: '17rem', height: 'auto' }}
+					style={{
+						width: '17rem',
+						left: '10%'
+					}}
+					title={'Bio'}
+					text={
+						'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper neque quis libero vehicula molestie. Nulla facilisi. Nunc sollicitudin mauris ac lorem vestibulum sagittis.'
+					}
+				/>
+				<Card
+					style={{ width: '17rem', left: '-10%' }}
 					title={'Skills'}
+					text={
+						'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper neque quis libero vehicula molestie. Nulla facilisi. Nunc sollicitudin mauris ac lorem vestibulum sagittis.'
+					}
+				/>
+				<Card
+					style={{ width: '17rem', left: '10%' }}
+					title={'Projects'}
 					text={
 						'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper neque quis libero vehicula molestie. Nulla facilisi. Nunc sollicitudin mauris ac lorem vestibulum sagittis.'
 					}

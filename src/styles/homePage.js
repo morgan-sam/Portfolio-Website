@@ -14,8 +14,8 @@ export const middleSectionStyle = {
 	width: '100%',
 	backgroundColor: '#eee',
 	display: 'flex',
-	alignItems: 'center',
 	justifyContent: 'center',
+	alignItems: 'center',
 	flexDirection: 'column'
 };
 
