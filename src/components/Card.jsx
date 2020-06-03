@@ -2,9 +2,11 @@ import React from 'react';
 
 const Card = (props) => {
 	const cardStyle = {
-		height: '10rem',
-		width: '12rem',
-		border: '1px solid #444'
+		height: '26%',
+		width: '14%',
+		border: '5px solid #444',
+		borderRadius: '10%',
+		boxShadow: '8px 10px #888'
 	};
 
 	return <div style={cardStyle}> </div>;
