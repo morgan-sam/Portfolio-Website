@@ -25,17 +25,11 @@ export default function Home() {
 		'https://images.unsplash.com/photo-1590664095641-7fa05f689813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80';
 
 	const homeStyle = {
-		position: 'absolute',
-		top: '0',
-		left: '0',
 		height: '200vh',
 		width: '100%'
 	};
 
 	const backgroundStyle = {
-		position: 'absolute',
-		top: '0',
-		left: '0',
 		height: '100vh',
 		width: '100%',
 		zIndex: '-10',
