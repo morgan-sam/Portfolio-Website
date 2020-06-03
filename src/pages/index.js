@@ -79,7 +79,7 @@ export default function Home() {
 							'Using:',
 							'HTML, CSS, JavaScript, React, PostgreSQL, Webpack, Jest, Linux',
 							'Also used:',
-							'MongoDB, Python, Bash'
+							'Python, MongoDB, Bash'
 						]}
 					/>
 				</div>
