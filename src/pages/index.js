@@ -34,7 +34,7 @@ export default function Home() {
 			<TopNavBar color={navColor} />
 			<div style={topSectionStyle}>
 				<div style={titleStyle}>
-					Sam Morgan<br />UK/USA Based Web Developer
+					Sam Morgan<br />UK/USA Front End Developer
 				</div>
 				<div style={backgroundStyle} />
 			</div>
@@ -51,9 +51,10 @@ export default function Home() {
 							transform: 'translateX(-50%)'
 						}}
 						title={'Bio'}
-						text={
-							'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper neque quis libero vehicula molestie. Nulla facilisi. Nunc sollicitudin mauris ac lorem vestibulum sagittis.'
-						}
+						text={[
+							'I am a front end developer who loves programming and solving problems.',
+							'I like to build software from scratch using minimal libraries.'
+						]}
 					/>
 					<Card
 						style={{
