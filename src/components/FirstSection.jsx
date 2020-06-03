@@ -1,7 +1,7 @@
 import React from 'react';
 import { topSectionStyle, backgroundStyle, titleStyle } from '../styles/homePage';
 
-const FirstSection = (props) => {
+const FirstSection = () => {
 	return (
 		<div style={topSectionStyle}>
 			<div style={titleStyle}>
