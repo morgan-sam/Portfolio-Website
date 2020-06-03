@@ -31,6 +31,7 @@ export default function Home() {
 				<div style={backgroundStyle} />
 			</div>
 			<div style={middleSectionStyle}>
+				<div style={{ position: 'absolute', height: '60%', width: '5px', backgroundColor: '#444' }} />
 				<Card
 					style={{
 						width: '17rem',
