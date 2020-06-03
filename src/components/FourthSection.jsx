@@ -15,15 +15,16 @@ const fourthSectionStyle = {
 	backgroundColor: '#efeeff'
 };
 
-const contactSquareStyle = {
+const contactContainerStyle = {
 	position: 'absolute',
-	height: '10rem',
-	width: '20%',
+	height: '20rem',
+	width: '20rem',
 	backgroundColor: '#efeeff',
 	display: 'flex',
 	alignItems: 'center',
 	justifyContent: 'center',
-	flexDirection: 'column'
+	flexDirection: 'column',
+	borderRadius: '100%'
 };
 
 const contactTextStyle = {
@@ -38,7 +39,7 @@ const FourthSection = () => {
 	return (
 		<div style={fourthSectionStyle}>
 			<img src={imageURL} style={{ height: '40rem' }} />
-			<div style={contactSquareStyle}>
+			<div style={contactContainerStyle}>
 				<div style={contactTextStyle}>Contact</div>
 				<div style={contactTextStyle}>hello@smorgan.dev</div>
 				<div style={contactTextStyle}>https://github.com/morgan-sam</div>
