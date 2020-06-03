@@ -15,10 +15,34 @@ const fourthSectionStyle = {
 	backgroundColor: '#efeeff'
 };
 
+const contactSquareStyle = {
+	position: 'absolute',
+	height: '10rem',
+	width: '20%',
+	backgroundColor: '#efeeff',
+	display: 'flex',
+	alignItems: 'center',
+	justifyContent: 'center',
+	flexDirection: 'column'
+};
+
+const contactTextStyle = {
+	fontSize: '1.3rem',
+	margin: '0.35rem',
+	textAlign: 'center',
+	backgroundColor: '#444',
+	color: 'white'
+};
+
 const FourthSection = () => {
 	return (
 		<div style={fourthSectionStyle}>
-			<img src={imageURL} style={{ height: '35rem' }} />
+			<img src={imageURL} style={{ height: '40rem' }} />
+			<div style={contactSquareStyle}>
+				<div style={contactTextStyle}>Contact</div>
+				<div style={contactTextStyle}>hello@smorgan.dev</div>
+				<div style={contactTextStyle}>https://github.com/morgan-sam</div>
+			</div>
 		</div>
 	);
 };
