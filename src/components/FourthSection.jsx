@@ -43,6 +43,8 @@ const FourthSection = () => {
 				<div style={contactTextStyle}>Contact</div>
 				<div style={contactTextStyle}>hello@smorgan.dev</div>
 				<div style={contactTextStyle}>https://github.com/morgan-sam</div>
+				<div style={contactTextStyle}>Curriculum Vitae</div>
+				<div style={contactTextStyle}>© 2020</div>
 			</div>
 		</div>
 	);
