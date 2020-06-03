@@ -2,7 +2,7 @@ import React from 'react';
 import NavButton from './NavButton';
 
 const TopNavBar = (props) => {
-	const buttons = [ 'home', 'about', 'blog', 'contact' ];
+	const buttons = [ 'home', 'about', 'projects', 'contact' ];
 
 	const navBarStyle = {
 		position: 'fixed',
