@@ -1,6 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import TopNavBar from '../components/TopNavBar';
 
+const topSectionStyle = {
+	display: 'block',
+	height: '100vh',
+	width: '100%',
+	display: 'flex',
+	alignItems: 'center',
+	flexDirection: 'column'
+};
+
+const middleSectionStyle = {
+	display: 'block',
+	height: '100vh',
+	width: '100%',
+	backgroundColor: '#eee'
+};
+
 export default function Home() {
 	const [ scrollPosition, setSrollPosition ] = useState(0);
 	const [ navColor, setNavColor ] = useState(0);
@@ -13,10 +29,7 @@ export default function Home() {
 		top: '0',
 		left: '0',
 		height: '200vh',
-		width: '100%',
-		display: 'flex',
-		alignItems: 'center',
-		flexDirection: 'column'
+		width: '100%'
 	};
 
 	const backgroundStyle = {
@@ -57,11 +70,16 @@ export default function Home() {
 
 	return (
 		<div style={homeStyle}>
-			<h1 style={titleStyle}>
-				Sam Morgan<br />UK/USA Based Web Developer
-			</h1>
 			<TopNavBar color={navColor} />
-			<div style={backgroundStyle} />
+			<div style={topSectionStyle}>
+				<h1 style={titleStyle}>
+					Sam Morgan<br />UK/USA Based Web Developer
+				</h1>
+				<div style={backgroundStyle} />
+			</div>
+			<div style={middleSectionStyle}>
+				<div style={{ color: 'red' }}>2nd Section</div>
+			</div>
 		</div>
 	);
 }
