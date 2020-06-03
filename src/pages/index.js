@@ -7,7 +7,7 @@ export default function Home() {
 	const [ scrollPosition, setSrollPosition ] = useState(0);
 	const [ navColor, setNavColor ] = useState(0);
 
-	const cardGap = '15%';
+	const cardGapPercentage = 25;
 
 	useEffect(() => {
 		window.addEventListener('scroll', () => setSrollPosition(window.pageYOffset));
@@ -33,31 +33,53 @@ export default function Home() {
 				<div style={backgroundStyle} />
 			</div>
 			<div style={middleSectionStyle}>
-				<div style={{ position: 'absolute', height: '60%', width: '5px', backgroundColor: '#444' }} />
-				<Card
-					style={{
-						width: '17rem',
-						left: `${cardGap}`
-					}}
-					title={'Bio'}
-					text={
-						'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper neque quis libero vehicula molestie. Nulla facilisi. Nunc sollicitudin mauris ac lorem vestibulum sagittis.'
-					}
-				/>
-				<Card
-					style={{ width: '17rem', left: `-${cardGap}` }}
-					title={'Skills'}
-					text={
-						'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper neque quis libero vehicula molestie. Nulla facilisi. Nunc sollicitudin mauris ac lorem vestibulum sagittis.'
-					}
-				/>
-				<Card
-					style={{ width: '17rem', left: `${cardGap}` }}
-					title={'Projects'}
-					text={
-						'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper neque quis libero vehicula molestie. Nulla facilisi. Nunc sollicitudin mauris ac lorem vestibulum sagittis.'
-					}
-				/>
+				<div style={{ position: 'absolute', height: '50%', width: '5px', backgroundColor: '#444' }} />
+				<div
+					style={{ position: 'relative', display: 'block', margin: '0 auto', width: '50rem', height: '75%' }}
+				>
+					<Card
+						style={{
+							width: '17rem',
+							height: '17rem',
+							position: ' absolute',
+							top: '0',
+							left: `${50 + cardGapPercentage}%`,
+							transform: 'translateX(-50%)'
+						}}
+						title={'Bio'}
+						text={
+							'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper neque quis libero vehicula molestie. Nulla facilisi. Nunc sollicitudin mauris ac lorem vestibulum sagittis.'
+						}
+					/>
+					<Card
+						style={{
+							width: '17rem',
+							height: '17rem',
+							position: ' absolute',
+							top: '50%',
+							left: `${50 - cardGapPercentage}%`,
+							transform: 'translate(-50%,-50%)'
+						}}
+						title={'Skills'}
+						text={
+							'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper neque quis libero vehicula molestie. Nulla facilisi. Nunc sollicitudin mauris ac lorem vestibulum sagittis.'
+						}
+					/>
+					<Card
+						style={{
+							width: '17rem',
+							height: '17rem',
+							position: ' absolute',
+							bottom: '0',
+							left: `${50 + cardGapPercentage}%`,
+							transform: 'translateX(-50%)'
+						}}
+						title={'Projects'}
+						text={
+							'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper neque quis libero vehicula molestie. Nulla facilisi. Nunc sollicitudin mauris ac lorem vestibulum sagittis.'
+						}
+					/>
+				</div>
 			</div>
 		</div>
 	);
