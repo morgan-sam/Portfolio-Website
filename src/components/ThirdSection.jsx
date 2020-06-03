@@ -10,7 +10,8 @@ const thirdSectionStyle = {
 	display: 'flex',
 	alignItems: 'center',
 	justifyContent: 'center',
-	flexDirection: 'column'
+	flexDirection: 'column',
+	backgroundColor: '#fff'
 };
 
 const titleStyle = {
