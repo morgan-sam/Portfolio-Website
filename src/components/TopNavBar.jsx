@@ -7,7 +7,8 @@ const TopNavBar = (props) => {
 	const navBarStyle = {
 		position: 'fixed',
 		top: '1rem',
-		right: '1rem'
+		right: '1rem',
+		zIndex: '10'
 	};
 
 	return <div style={navBarStyle}>{buttons.map((el) => <NavButton text={el} color={props.color} />)}</div>;
