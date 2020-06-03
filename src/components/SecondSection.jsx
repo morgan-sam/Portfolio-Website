@@ -12,11 +12,13 @@ const cardStyle = {
 
 const lineStyle = { position: 'absolute', height: '50%', width: '5px', backgroundColor: '#444' };
 
+const cardContainerStyle = { position: 'relative', display: 'block', margin: '0 auto', width: '50rem', height: '75%' };
+
 const SecondSection = () => {
 	return (
 		<div style={secondSectionStyle}>
 			<div style={lineStyle} />
-			<div style={{ position: 'relative', display: 'block', margin: '0 auto', width: '50rem', height: '75%' }}>
+			<div style={cardContainerStyle}>
 				<Card
 					style={{
 						...cardStyle,
