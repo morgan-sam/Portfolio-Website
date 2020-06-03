@@ -47,7 +47,7 @@ const Card = (props) => {
 		<div style={cardStyle}>
 			<div style={titleStyle}>{title}</div>
 			<div style={textStyle}>
-				{text}
+				{Array.isArray(text) ? text.map((el) => <p style={{ marginBottom: '10px' }}>{el}</p>) : text}
 				<div style={fadeOverlayStyle} />
 			</div>
 		</div>

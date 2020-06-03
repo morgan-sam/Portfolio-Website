@@ -74,10 +74,13 @@ export default function Home() {
 							left: `${50 + cardGapPercentage}%`,
 							transform: 'translateX(-50%)'
 						}}
-						title={'Tools'}
-						text={
-							'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper neque quis libero vehicula molestie. Nulla facilisi. Nunc sollicitudin mauris ac lorem vestibulum sagittis.'
-						}
+						title={'Tech'}
+						text={[
+							'Using:',
+							'HTML, CSS, JavaScript, React, PostgreSQL, Webpack, Jest, Linux',
+							'Used:',
+							'MongoDB, Python, Bash'
+						]}
 					/>
 				</div>
 			</div>
