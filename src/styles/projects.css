@@ -1,0 +1,46 @@
+.projectSection {
+	background-color: #fbf3e5;
+}
+
+.projectTitle {
+	margin: 2rem;
+	font-size: 2rem;
+	text-decoration-line: underline;
+	color: #444;
+}
+
+.projectSubHeading {
+	text-align: center;
+	font-size: 2rem;
+	text-decoration-line: underline;
+	margin: 3rem;
+	color: #444;
+}
+
+.projectImg {
+	height: 25rem;
+	border: 1px solid #444;
+	margin: 0 4rem;
+	object-fit: cover;
+}
+
+.projectContainer {
+	display: flex;
+}
+
+.projectSubContainer {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 3rem;
+	background-color: #eee;
+	border-radius: 2rem;
+	border: 2px solid #444;
+}
+
+.linkTextStyle {
+	text-align: center;
+	font-size: 2rem;
+	margin: 3rem;
+}

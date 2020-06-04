@@ -2,39 +2,23 @@ import React from 'react';
 import traintracks from '../img/traintracks.jpeg';
 import platform from '../img/platform.jpeg';
 
-import {
-	thirdSectionStyle,
-	titleStyle,
-	subHeadingStyle,
-	imgStyles,
-	projectsContainerStyle,
-	subContainerStyle,
-	linkTextStyle
-} from '../styles/thirdSection';
-
 const ThirdSection = React.forwardRef((props, ref) => {
 	return (
-		<div className={'section projectSection'} style={thirdSectionStyle} ref={ref}>
-			<div style={titleStyle}>Projects</div>
-			<div className={'projectContainer'} style={projectsContainerStyle}>
-				<div style={subContainerStyle}>
-					<div style={subHeadingStyle}>Train Tracks Game</div>
-					<img style={{ ...imgStyles, width: '25rem' }} src={traintracks} alt="traintracks" />
-					<div style={linkTextStyle}>
+		<div className={'section projectSection'} ref={ref}>
+			<div className={'projectTitle'}>Projects</div>
+			<div className={'projectContainer'}>
+				<div className={'projectSubContainer'}>
+					<div className={'projectSubHeading'}>Train Tracks Game</div>
+					<img className={'projectImg'} style={{ width: '25rem' }} src={traintracks} alt="traintracks" />
+					<div className={'linkTextStyle'}>
 						<a href="https://morgan-sam.github.io/Train-Tracks-React/">Live</a> /{' '}
 						<a href="https://github.com/morgan-sam/Train-Tracks-React">Source Code</a>
 					</div>
 				</div>
-				<div style={subContainerStyle}>
-					<div style={subHeadingStyle}>Project Management Platform</div>
-					<img
-						style={{
-							...imgStyles
-						}}
-						src={platform}
-						alt="platform"
-					/>
-					<div style={linkTextStyle}>
+				<div className={'projectSubContainer'}>
+					<div className={'projectSubHeading'}>Project Management Platform</div>
+					<img className={'projectImg'} src={platform} alt="platform" />
+					<div className={'linkTextStyle'}>
 						<a href="https://github.com/morgan-sam/Project-Management-Platform">Source Code</a>
 					</div>
 				</div>
