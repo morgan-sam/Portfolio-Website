@@ -17,7 +17,8 @@ export const contactContainerStyle = {
 	alignItems: 'center',
 	justifyContent: 'center',
 	flexDirection: 'column',
-	borderRadius: '100%'
+	borderRadius: '100%',
+	backgroundColor: '#fff'
 };
 
 export const contactTextStyle = {
