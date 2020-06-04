@@ -44,7 +44,9 @@ const FourthSection = () => {
 				<div style={contactTextStyle}>
 					<a href="https://github.com/morgan-sam">https://github.com/morgan-sam</a>
 				</div>
-				<div style={contactTextStyle}>Curriculum Vitae</div>
+				<div style={contactTextStyle}>
+					<a href="smorgan.dev/cv">Curriculum Vitae</a>
+				</div>
 				<div style={contactTextStyle}>© 2020</div>
 			</div>
 		</div>
