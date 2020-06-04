@@ -34,6 +34,8 @@ html {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	cursor: pointer;
+	z-index: 1;
 }
 
 .hamburgerLine {
@@ -57,6 +59,17 @@ html {
 	top: 75%;
 }
 
+.openHamburgerLine:nth-child(1) {
+	transform: rotate(45deg) translate(25%, 350%);
+}
+.openHamburgerLine:nth-child(2) {
+	transform: rotate(90deg);
+	opacity: 0;
+}
+.openHamburgerLine:nth-child(3) {
+	transform: rotate(-45deg) translate(25%, -350%);
+}
+
 @media only screen and (max-width: 1600.hamburgerLinex) {
 	.projectContainer {
 		flex-direction: column;
@@ -77,15 +90,5 @@ html {
 @media only screen and (max-width: 600px) {
 	.navbar {
 		display: none;
-	}
-	.hamburgerLine:nth-child(1) {
-		transform: rotate(45deg) translate(25%, 350%);
-	}
-	.hamburgerLine:nth-child(2) {
-		transform: rotate(90deg);
-		opacity: 0;
-	}
-	.hamburgerLine:nth-child(3) {
-		transform: rotate(-45deg) translate(25%, -350%);
 	}
 }

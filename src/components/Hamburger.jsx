@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Hamburger = (props) => {
+	const [ open, setOpen ] = useState(false);
+
 	return (
-		<div className={'hamburger'}>
-			<div className={'hamburgerLine'} />
-			<div className={'hamburgerLine'} />
-			<div className={'hamburgerLine'} />
+		<div className={'hamburger'} onClick={() => setOpen(!open)}>
+			<div className={`hamburgerLine ${open ? 'openHamburgerLine' : null}`} />
+			<div className={`hamburgerLine ${open ? 'openHamburgerLine' : null}`} />
+			<div className={`hamburgerLine ${open ? 'openHamburgerLine' : null}`} />
 		</div>
 	);
 };
