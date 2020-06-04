@@ -4,13 +4,6 @@ import NavButton from './NavButton';
 const TopNavBar = (props) => {
 	const buttons = [ 'home', 'about', 'projects', 'contact' ];
 
-	const navBarStyle = {
-		position: 'fixed',
-		top: '1rem',
-		right: '1rem',
-		zIndex: '10'
-	};
-
 	const getCurrentBtnStyle = (section) => {
 		if (section === 0)
 			return {
@@ -67,7 +60,7 @@ const TopNavBar = (props) => {
 	};
 
 	return (
-		<div style={navBarStyle}>
+		<div className={'navbar'}>
 			{buttons.map((el, i) => (
 				<NavButton
 					text={el}
