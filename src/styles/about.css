@@ -1,6 +1,6 @@
 :root {
 	--horizontal-card-gap: 50%;
-	--vertical-card-gap: -5rem;
+	--vertical-card-gap: 5rem;
 }
 
 .aboutSection {
@@ -31,7 +31,7 @@
 }
 
 .card:nth-child(odd) {
-	margin: var(--vertical-card-gap) 0 var(--vertical-card-gap) var(--horizontal-card-gap);
+	margin: calc(var(--vertical-card-gap) * -1) 0 calc(var(--vertical-card-gap) * -1) var(--horizontal-card-gap);
 }
 .card:nth-child(even) {
 	margin: 0 var(--horizontal-card-gap) 0 0;
