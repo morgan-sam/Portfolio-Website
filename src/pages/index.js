@@ -4,7 +4,6 @@ import FirstSection from '../components/FirstSection';
 import SecondSection from '../components/SecondSection';
 import ThirdSection from '../components/ThirdSection';
 import FourthSection from '../components/FourthSection';
-import { homeStyle } from '../styles/default';
 
 export default function Home() {
 	const [ scrollPosition, setScrollPosition ] = useState(0);
@@ -38,7 +37,7 @@ export default function Home() {
 	);
 
 	return (
-		<div style={homeStyle}>
+		<div>
 			<TopNavBar currentSection={currentSection} handleClicks={handleClicks} />
 			<FirstSection ref={firstRef} />
 			<SecondSection ref={secondRef} />
