@@ -2,7 +2,7 @@ import React from 'react';
 import traintracks from '../img/traintracks.jpeg';
 import platform from '../img/platform.jpeg';
 
-const ThirdSection = React.forwardRef((props, ref) => {
+const Projects = React.forwardRef((props, ref) => {
 	return (
 		<div className={'section projectSection'} ref={ref}>
 			<div className={'projectTitle'}>Projects</div>
@@ -27,4 +27,4 @@ const ThirdSection = React.forwardRef((props, ref) => {
 	);
 });
 
-export default ThirdSection;
+export default Projects;

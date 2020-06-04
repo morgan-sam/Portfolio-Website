@@ -9,7 +9,7 @@ const skillLevels = [
 	{ skill: 'Photoshop', level: 8 }
 ];
 
-const SecondSection = React.forwardRef((props, ref) => {
+const About = React.forwardRef((props, ref) => {
 	return (
 		<div className={'section aboutSection'} ref={ref}>
 			<div className={'line'} />
@@ -72,4 +72,4 @@ const SecondSection = React.forwardRef((props, ref) => {
 	);
 });
 
-export default SecondSection;
+export default About;

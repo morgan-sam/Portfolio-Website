@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FourthSection = React.forwardRef((props, ref) => {
+const Contact = React.forwardRef((props, ref) => {
 	return (
 		<div className={'section contactSection'} ref={ref}>
 			<div className={'contactImage'} />
@@ -19,4 +19,4 @@ const FourthSection = React.forwardRef((props, ref) => {
 	);
 });
 
-export default FourthSection;
+export default Contact;

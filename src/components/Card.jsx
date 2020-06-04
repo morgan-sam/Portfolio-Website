@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Card = (props) => {
-	const { title, text, style } = props;
+	const { title, text } = props;
 
 	const cardStyle = {
 		position: 'relative',

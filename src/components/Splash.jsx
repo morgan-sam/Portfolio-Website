@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FirstSection = React.forwardRef((props, ref) => {
+const Splash = React.forwardRef((props, ref) => {
 	return (
 		<div className={'section'} ref={ref}>
 			<div className={'splashTitle'}>
@@ -11,4 +11,4 @@ const FirstSection = React.forwardRef((props, ref) => {
 	);
 });
 
-export default FirstSection;
+export default Splash;
