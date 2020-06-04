@@ -18,7 +18,7 @@ const skillLevels = [
 
 const SecondSection = React.forwardRef((props, ref) => {
 	return (
-		<div style={secondSectionStyle} ref={ref}>
+		<div className={'section'} style={secondSectionStyle} ref={ref}>
 			<div style={lineStyle} />
 			<div style={cardContainerStyle}>
 				<Card

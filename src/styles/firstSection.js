@@ -1,7 +1,7 @@
 import { sectionStyle } from './default';
 
 export const firstSectionStyle = {
-	...sectionStyle
+	//
 };
 
 const backgroundURL =

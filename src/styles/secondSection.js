@@ -1,7 +1,4 @@
-import { sectionStyle } from './default';
-
 export const secondSectionStyle = {
-	...sectionStyle,
 	backgroundColor: '#eee'
 };
 

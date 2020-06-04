@@ -3,7 +3,7 @@ import { firstSectionStyle, backgroundStyle, titleStyle } from '../styles/firstS
 
 const FirstSection = React.forwardRef((props, ref) => {
 	return (
-		<div style={firstSectionStyle} ref={ref}>
+		<div className={'section'} style={firstSectionStyle} ref={ref}>
 			<div style={titleStyle}>
 				Sam Morgan<br />UK/USA Front End Developer
 			</div>

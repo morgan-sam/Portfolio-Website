@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap");
 
 html {
-  font-family: "Ropa Sans", sans-serif;
+	font-family: "Ropa Sans", sans-serif;
+}
+
+.section {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+@media only screen and (max-width: 1600px) {
+	.projectContainer {
+		flex-direction: column;
+	}
+	.projectSection {
+		height: auto;
+	}
 }

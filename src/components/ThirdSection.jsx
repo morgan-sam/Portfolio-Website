@@ -14,9 +14,9 @@ import {
 
 const ThirdSection = React.forwardRef((props, ref) => {
 	return (
-		<div style={thirdSectionStyle} ref={ref}>
+		<div className={'section projectSection'} style={thirdSectionStyle} ref={ref}>
 			<div style={titleStyle}>Projects</div>
-			<div style={projectsContainerStyle}>
+			<div className={'projectContainer'} style={projectsContainerStyle}>
 				<div style={subContainerStyle}>
 					<div style={subHeadingStyle}>Train Tracks Game</div>
 					<img style={{ ...imgStyles, width: '25rem' }} src={traintracks} alt="traintracks" />

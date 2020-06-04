@@ -4,7 +4,7 @@ import { imageURL, fourthSectionStyle, contactContainerStyle, contactTextStyle }
 
 const FourthSection = React.forwardRef((props, ref) => {
 	return (
-		<div style={fourthSectionStyle} ref={ref}>
+		<div className={'section'} style={fourthSectionStyle} ref={ref}>
 			<img src={imageURL} style={{ height: '40rem' }} />
 			<div style={contactContainerStyle}>
 				<div style={contactTextStyle}>Contact</div>
