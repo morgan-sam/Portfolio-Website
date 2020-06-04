@@ -7,7 +7,7 @@ import FourthSection from '../components/FourthSection';
 import { homeStyle } from '../styles/homePage';
 
 export default function Home() {
-	const [ scrollPosition, setSrollPosition ] = useState(0);
+	const [ scrollPosition, setScrollPosition ] = useState(0);
 	const [ currentSection, setCurrentSection ] = useState(0);
 
 	const firstRef = React.createRef();
@@ -23,8 +23,8 @@ export default function Home() {
 	);
 
 	useEffect(() => {
-		window.addEventListener('scroll', () => setSrollPosition(window.pageYOffset));
-		return () => window.removeEventListener('scroll', () => setSrollPosition(window.pageYOffset));
+		window.addEventListener('scroll', () => setScrollPosition(window.pageYOffset));
+		return () => window.removeEventListener('scroll', () => setScrollPosition(window.pageYOffset));
 	}, []);
 
 	useEffect(
