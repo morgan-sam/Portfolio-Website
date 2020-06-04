@@ -1,0 +1,24 @@
+.aboutSection {
+	background-color: #eee;
+}
+
+.cardContainer {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 50rem;
+	height: 75%;
+}
+
+.line {
+	position: absolute;
+	height: 50%;
+	width: 5px;
+	background-color: #444;
+}
+
+.card {
+	width: 17rem;
+	height: 17rem;
+	position: absolute;
+}

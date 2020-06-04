@@ -10,9 +10,7 @@ const Card = (props) => {
 		boxShadow: '6px 10px #888',
 		backgroundColor: '#fff',
 		overflow: 'hidden',
-		...style,
-		height: style.height ? style.height : 'auto',
-		width: style.width ? style.width : 'auto'
+		...style
 	};
 
 	const titleStyle = {
@@ -44,7 +42,7 @@ const Card = (props) => {
 	};
 
 	return (
-		<div style={cardStyle}>
+		<div className={'card'} style={cardStyle}>
 			<div style={titleStyle}>{title}</div>
 			<div style={textStyle}>
 				{Array.isArray(text) ? text.map((el) => <p style={{ marginBottom: '10px' }}>{el}</p>) : text}

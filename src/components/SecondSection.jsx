@@ -1,12 +1,5 @@
 import React from 'react';
 import Card from '../components/Card';
-import {
-	secondSectionStyle,
-	cardGapPercentage,
-	cardStyle,
-	lineStyle,
-	cardContainerStyle
-} from '../styles/secondSection';
 
 const skillLevels = [
 	{ skill: 'Programming', level: 10 },
@@ -16,15 +9,15 @@ const skillLevels = [
 	{ skill: 'Photoshop', level: 8 }
 ];
 
+const cardGapPercentage = 25;
+
 const SecondSection = React.forwardRef((props, ref) => {
 	return (
-		<div className={'section'} style={secondSectionStyle} ref={ref}>
-			<div style={lineStyle} />
-			<div style={cardContainerStyle}>
+		<div className={'section aboutSection'} ref={ref}>
+			<div className={'line'} />
+			<div className={'cardContainer'}>
 				<Card
 					style={{
-						...cardStyle,
-						top: '0',
 						left: `${50 + cardGapPercentage}%`,
 						transform: 'translateX(-50%)'
 					}}
@@ -36,10 +29,8 @@ const SecondSection = React.forwardRef((props, ref) => {
 				/>
 				<Card
 					style={{
-						...cardStyle,
-						top: '50%',
 						left: `${50 - cardGapPercentage}%`,
-						transform: 'translate(-50%,-50%)'
+						transform: 'translateX(-50%)'
 					}}
 					title={'Skills'}
 					text={
@@ -79,8 +70,6 @@ const SecondSection = React.forwardRef((props, ref) => {
 				/>
 				<Card
 					style={{
-						...cardStyle,
-						bottom: '0',
 						left: `${50 + cardGapPercentage}%`,
 						transform: 'translateX(-50%)'
 					}}
