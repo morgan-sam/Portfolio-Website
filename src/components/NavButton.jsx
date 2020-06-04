@@ -14,7 +14,12 @@ const NavButton = (props) => {
 		backgroundColor: colors.default.background,
 		overflow: 'hidden',
 		transition: '0.35s color ease-in-out, 0.35s border ease-in-out, 0.35s background ease-in-out',
-		cursor: 'pointer'
+		cursor: 'pointer',
+		zIndex: '1'
+	};
+
+	const btnTextStyle = {
+		zIndex: '2'
 	};
 
 	const backgroundStyle = {
@@ -38,7 +43,7 @@ const NavButton = (props) => {
 			onBlur={() => setHover(false)}
 			style={navButtonStyle}
 		>
-			{props.text}
+			<div style={btnTextStyle}>{props.text}</div>
 			<div style={backgroundStyle} />
 		</button>
 	);

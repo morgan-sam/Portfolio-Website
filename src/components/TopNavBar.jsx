@@ -48,7 +48,7 @@ const TopNavBar = (props) => {
 				hover: {
 					text: 'black',
 					border: 'black',
-					background: 'white'
+					background: '#eee'
 				}
 			};
 		else if (section === 3)
