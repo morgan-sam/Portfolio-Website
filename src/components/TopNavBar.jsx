@@ -68,7 +68,13 @@ const TopNavBar = (props) => {
 
 	return (
 		<div style={navBarStyle}>
-			{buttons.map((el) => <NavButton text={el} colors={getCurrentBtnStyle(props.currentSection)} />)}
+			{buttons.map((el, i) => (
+				<NavButton
+					text={el}
+					colors={getCurrentBtnStyle(props.currentSection)}
+					handleClick={props.handleClicks[i]}
+				/>
+			))}
 		</div>
 	);
 };

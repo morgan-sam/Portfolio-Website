@@ -49,9 +49,9 @@ const linkTextStyle = {
 	margin: '3rem'
 };
 
-const ThirdSection = () => {
+const ThirdSection = React.forwardRef((props, ref) => {
 	return (
-		<div style={thirdSectionStyle}>
+		<div style={thirdSectionStyle} ref={ref}>
 			<div style={titleStyle}>Projects</div>
 			<div style={imgContainerStyle}>
 				<div style={subContainerStyle}>
@@ -72,6 +72,6 @@ const ThirdSection = () => {
 			</div>
 		</div>
 	);
-};
+});
 
 export default ThirdSection;

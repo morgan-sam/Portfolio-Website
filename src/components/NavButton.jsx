@@ -31,6 +31,7 @@ const NavButton = (props) => {
 
 	return (
 		<button
+			onClick={() => props.handleClick()}
 			onMouseOver={() => setHover(true)}
 			onFocus={() => setHover(true)}
 			onMouseLeave={() => setHover(false)}

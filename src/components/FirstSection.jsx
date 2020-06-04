@@ -1,15 +1,15 @@
 import React from 'react';
 import { firstSectionStyle, backgroundStyle, titleStyle } from '../styles/homePage';
 
-const FirstSection = () => {
+const FirstSection = React.forwardRef((props, ref) => {
 	return (
-		<div style={firstSectionStyle}>
+		<div style={firstSectionStyle} ref={ref}>
 			<div style={titleStyle}>
 				Sam Morgan<br />UK/USA Front End Developer
 			</div>
 			<div style={backgroundStyle} />
 		</div>
 	);
-};
+});
 
 export default FirstSection;

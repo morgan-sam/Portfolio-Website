@@ -34,9 +34,9 @@ const contactTextStyle = {
 	color: '#444'
 };
 
-const FourthSection = () => {
+const FourthSection = React.forwardRef((props, ref) => {
 	return (
-		<div style={fourthSectionStyle}>
+		<div style={fourthSectionStyle} ref={ref}>
 			<img src={imageURL} style={{ height: '40rem' }} />
 			<div style={contactContainerStyle}>
 				<div style={contactTextStyle}>Contact</div>
@@ -51,6 +51,6 @@ const FourthSection = () => {
 			</div>
 		</div>
 	);
-};
+});
 
 export default FourthSection;

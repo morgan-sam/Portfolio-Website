@@ -14,9 +14,9 @@ const lineStyle = { position: 'absolute', height: '50%', width: '5px', backgroun
 
 const cardContainerStyle = { position: 'relative', display: 'block', margin: '0 auto', width: '50rem', height: '75%' };
 
-const SecondSection = () => {
+const SecondSection = React.forwardRef((props, ref) => {
 	return (
-		<div style={secondSectionStyle}>
+		<div style={secondSectionStyle} ref={ref}>
 			<div style={lineStyle} />
 			<div style={cardContainerStyle}>
 				<Card
@@ -62,6 +62,6 @@ const SecondSection = () => {
 			</div>
 		</div>
 	);
-};
+});
 
 export default SecondSection;

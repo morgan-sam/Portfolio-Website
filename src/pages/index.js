@@ -25,13 +25,42 @@ export default function Home() {
 		[ scrollPosition ]
 	);
 
+	const firstRef = React.createRef();
+	const secondRef = React.createRef();
+	const thirdRef = React.createRef();
+	const fourthRef = React.createRef();
+
+	const scrollToFirst = () =>
+		firstRef.current.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		});
+	const scrollToSecond = () =>
+		secondRef.current.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		});
+	const scrollToThird = () =>
+		thirdRef.current.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		});
+	const scrollToFourth = () =>
+		fourthRef.current.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		});
+
 	return (
 		<div style={homeStyle}>
-			<TopNavBar currentSection={currentSection} />
-			<FirstSection />
-			<SecondSection />
-			<ThirdSection />
-			<FourthSection />
+			<TopNavBar
+				currentSection={currentSection}
+				handleClicks={[ scrollToFirst, scrollToSecond, scrollToThird, scrollToFourth ]}
+			/>
+			<FirstSection ref={firstRef} />
+			<SecondSection ref={secondRef} />
+			<ThirdSection ref={thirdRef} />
+			<FourthSection ref={fourthRef} />
 		</div>
 	);
 }
