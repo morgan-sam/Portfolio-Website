@@ -59,8 +59,8 @@ const TopNavBar = (props) => {
 					background: '#f6eded'
 				},
 				hover: {
-					text: 'black',
-					border: 'white',
+					text: '#779ecb',
+					border: '#779ecb',
 					background: 'white'
 				}
 			};
