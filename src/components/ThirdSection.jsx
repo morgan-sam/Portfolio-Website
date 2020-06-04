@@ -43,6 +43,12 @@ const subContainerStyle = {
 	margin: '1rem'
 };
 
+const linkTextStyle = {
+	textAlign: 'center',
+	fontSize: '2rem',
+	margin: '3rem'
+};
+
 const ThirdSection = () => {
 	return (
 		<div style={thirdSectionStyle}>
@@ -51,10 +57,17 @@ const ThirdSection = () => {
 				<div style={subContainerStyle}>
 					<div style={subHeadingStyle}>Train Tracks Game</div>
 					<img style={imgStyles} src={traintracks} alt="traintracks" />
+					<div style={linkTextStyle}>
+						<a href="https://morgan-sam.github.io/Train-Tracks-React/">Live</a> /{' '}
+						<a href="https://github.com/morgan-sam/Train-Tracks-React">Source Code</a>
+					</div>
 				</div>
 				<div style={subContainerStyle}>
 					<div style={subHeadingStyle}>Project Management Platform</div>
 					<img style={imgStyles} src={platform} alt="platform" />
+					<div style={linkTextStyle}>
+						<a href="https://github.com/morgan-sam/Project-Management-Platform">Source Code</a>
+					</div>
 				</div>
 			</div>
 		</div>
