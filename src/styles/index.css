@@ -19,9 +19,44 @@ html {
 	top: 1rem;
 	right: 1rem;
 	z-index: 10;
+	display: none;
 }
 
-@media only screen and (max-width: 1600px) {
+.hamburger {
+	color: white;
+	position: fixed;
+	top: 1.5rem;
+	right: 1.5rem;
+	height: 3rem;
+	width: 3rem;
+	border: 2px solid white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.hamburgerLine {
+	height: 3px;
+	width: 70%;
+	background-color: white;
+	position: absolute;
+	z-index: 1;
+	transform: translateY(-50%);
+	background: white;
+}
+
+.hamburgerLine:nth-child(1) {
+	top: 25%;
+}
+.hamburgerLine:nth-child(2) {
+	top: 50%;
+}
+.hamburgerLine:nth-child(3) {
+	top: 75%;
+}
+
+@media only screen and (max-width: 1600.hamburgerLinex) {
 	.projectContainer {
 		flex-direction: column;
 	}

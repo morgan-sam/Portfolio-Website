@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import TopNavBar from '../components/TopNavBar';
+import Hamburger from '../components/Hamburger';
 import Splash from '../components/Splash';
 import About from '../components/About';
 import Projects from '../components/Projects';
@@ -39,6 +40,7 @@ export default function Home() {
 	return (
 		<div>
 			<TopNavBar currentSection={currentSection} handleClicks={handleClicks} />
+			<Hamburger />
 			<Splash ref={firstRef} />
 			<About ref={secondRef} />
 			<Projects ref={thirdRef} />
