@@ -10,6 +10,18 @@ export default function Home() {
 	const [ scrollPosition, setSrollPosition ] = useState(0);
 	const [ currentSection, setCurrentSection ] = useState(0);
 
+	const firstRef = React.createRef();
+	const secondRef = React.createRef();
+	const thirdRef = React.createRef();
+	const fourthRef = React.createRef();
+
+	const handleClicks = [ firstRef, secondRef, thirdRef, fourthRef ].map((el) => () =>
+		el.current.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		})
+	);
+
 	useEffect(() => {
 		window.addEventListener('scroll', () => setSrollPosition(window.pageYOffset));
 		return () => window.removeEventListener('scroll', () => setSrollPosition(window.pageYOffset));
@@ -25,38 +37,9 @@ export default function Home() {
 		[ scrollPosition ]
 	);
 
-	const firstRef = React.createRef();
-	const secondRef = React.createRef();
-	const thirdRef = React.createRef();
-	const fourthRef = React.createRef();
-
-	const scrollToFirst = () =>
-		firstRef.current.scrollIntoView({
-			behavior: 'smooth',
-			block: 'start'
-		});
-	const scrollToSecond = () =>
-		secondRef.current.scrollIntoView({
-			behavior: 'smooth',
-			block: 'start'
-		});
-	const scrollToThird = () =>
-		thirdRef.current.scrollIntoView({
-			behavior: 'smooth',
-			block: 'start'
-		});
-	const scrollToFourth = () =>
-		fourthRef.current.scrollIntoView({
-			behavior: 'smooth',
-			block: 'start'
-		});
-
 	return (
 		<div style={homeStyle}>
-			<TopNavBar
-				currentSection={currentSection}
-				handleClicks={[ scrollToFirst, scrollToSecond, scrollToThird, scrollToFourth ]}
-			/>
+			<TopNavBar currentSection={currentSection} handleClicks={handleClicks} />
 			<FirstSection ref={firstRef} />
 			<SecondSection ref={secondRef} />
 			<ThirdSection ref={thirdRef} />
