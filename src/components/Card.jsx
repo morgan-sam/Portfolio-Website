@@ -9,8 +9,7 @@ const Card = (props) => {
 		borderRadius: '10%',
 		boxShadow: '6px 10px #888',
 		backgroundColor: '#fff',
-		overflow: 'hidden',
-		...style
+		overflow: 'hidden'
 	};
 
 	const titleStyle = {

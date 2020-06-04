@@ -9,17 +9,12 @@ const skillLevels = [
 	{ skill: 'Photoshop', level: 8 }
 ];
 
-const cardGapPercentage = 25;
-
 const SecondSection = React.forwardRef((props, ref) => {
 	return (
 		<div className={'section aboutSection'} ref={ref}>
 			<div className={'line'} />
 			<div className={'cardContainer'}>
 				<Card
-					style={{
-						left: `${50 + cardGapPercentage}%`
-					}}
 					title={'Bio'}
 					text={[
 						'I am a front end developer who loves programming and solving problems.',
@@ -27,9 +22,6 @@ const SecondSection = React.forwardRef((props, ref) => {
 					]}
 				/>
 				<Card
-					style={{
-						left: `${50 - cardGapPercentage}%`
-					}}
 					title={'Skills'}
 					text={
 						<ul style={{ width: '100%', position: 'relative' }}>
@@ -67,9 +59,6 @@ const SecondSection = React.forwardRef((props, ref) => {
 					}
 				/>
 				<Card
-					style={{
-						left: `${50 + cardGapPercentage}%`
-					}}
 					title={'Tech'}
 					text={[
 						'Using:',

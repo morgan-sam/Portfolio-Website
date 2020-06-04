@@ -1,11 +1,18 @@
+:root {
+	--horizontal-card-gap: 50%;
+	--vertical-card-gap: -5rem;
+}
+
 .aboutSection {
 	background-color: #eee;
 }
 
 .cardContainer {
 	position: relative;
-	display: block;
-	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	width: 50rem;
 	height: 75%;
 }
@@ -21,5 +28,11 @@
 	width: 17rem;
 	height: 17rem;
 	position: absolute;
-	transform: translateX(-50%);
+}
+
+.card:nth-child(odd) {
+	margin: var(--vertical-card-gap) 0 var(--vertical-card-gap) var(--horizontal-card-gap);
+}
+.card:nth-child(even) {
+	margin: 0 var(--horizontal-card-gap) 0 0;
 }
