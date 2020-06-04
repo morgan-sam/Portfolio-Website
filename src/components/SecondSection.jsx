@@ -1,18 +1,12 @@
 import React from 'react';
 import Card from '../components/Card';
-import { secondSectionStyle } from '../styles/homePage';
-
-const cardGapPercentage = 25;
-
-const cardStyle = {
-	width: '17rem',
-	height: '17rem',
-	position: ' absolute'
-};
-
-const lineStyle = { position: 'absolute', height: '50%', width: '5px', backgroundColor: '#444' };
-
-const cardContainerStyle = { position: 'relative', display: 'block', margin: '0 auto', width: '50rem', height: '75%' };
+import {
+	secondSectionStyle,
+	cardGapPercentage,
+	cardStyle,
+	lineStyle,
+	cardContainerStyle
+} from '../styles/secondSection';
 
 const SecondSection = React.forwardRef((props, ref) => {
 	return (

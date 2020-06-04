@@ -8,17 +8,6 @@ export const firstSectionStyle = {
 	flexDirection: 'column'
 };
 
-export const secondSectionStyle = {
-	display: 'block',
-	height: '100vh',
-	width: '100%',
-	backgroundColor: '#eee',
-	display: 'flex',
-	justifyContent: 'center',
-	alignItems: 'center',
-	flexDirection: 'column'
-};
-
 const backgroundURL =
 	'https://images.unsplash.com/photo-1590664095641-7fa05f689813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80';
 
