@@ -56,12 +56,12 @@ const TopNavBar = (props) => {
 				default: {
 					text: '#2b0e0e',
 					border: '#2b0e0e',
-					background: '#f6eded'
+					background: '#efeeff'
 				},
 				hover: {
 					text: '#779ecb',
 					border: '#779ecb',
-					background: 'white'
+					background: '#f6eded'
 				}
 			};
 	};

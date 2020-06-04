@@ -2,7 +2,7 @@ import { sectionStyle } from './default';
 
 export const fourthSectionStyle = {
 	...sectionStyle,
-	backgroundColor: '#efeeff'
+	backgroundColor: '#f2f8fb'
 };
 
 export const imageURL =
