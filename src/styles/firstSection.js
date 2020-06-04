@@ -1,11 +1,7 @@
+import { sectionStyle } from './default';
+
 export const firstSectionStyle = {
-	display: 'block',
-	height: '100vh',
-	width: '100%',
-	display: 'flex',
-	alignItems: 'center',
-	justifyContent: 'center',
-	flexDirection: 'column'
+	...sectionStyle
 };
 
 const backgroundURL =

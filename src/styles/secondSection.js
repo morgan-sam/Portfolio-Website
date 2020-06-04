@@ -1,12 +1,8 @@
+import { sectionStyle } from './default';
+
 export const secondSectionStyle = {
-	display: 'block',
-	height: '100vh',
-	width: '100%',
-	backgroundColor: '#eee',
-	display: 'flex',
-	justifyContent: 'center',
-	alignItems: 'center',
-	flexDirection: 'column'
+	...sectionStyle,
+	backgroundColor: '#eee'
 };
 
 export const cardGapPercentage = 25;

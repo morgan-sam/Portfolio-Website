@@ -1,12 +1,7 @@
+import { sectionStyle } from './default';
+
 export const thirdSectionStyle = {
-	position: 'relative',
-	display: 'block',
-	height: '100vh',
-	width: '100%',
-	display: 'flex',
-	alignItems: 'center',
-	justifyContent: 'center',
-	flexDirection: 'column',
+	...sectionStyle,
 	backgroundColor: '#fff'
 };
 
