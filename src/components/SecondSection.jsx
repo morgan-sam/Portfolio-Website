@@ -35,7 +35,23 @@ const SecondSection = React.forwardRef((props, ref) => {
 					}}
 					title={'Skills'}
 					text={
-						'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper neque quis libero vehicula molestie. Nulla facilisi. Nunc sollicitudin mauris ac lorem vestibulum sagittis.'
+						<ul style={{ width: '100%', position: 'relative' }}>
+							<li style={{ marginBottom: '0.7rem' }}>
+								Programming:<span style={{ position: 'absolute', right: '0' }}>||||||||||</span>
+							</li>
+							<li style={{ marginBottom: '0.7rem' }}>
+								Front End:<span style={{ position: 'absolute', right: '0' }}>||||||||||</span>
+							</li>
+							<li style={{ marginBottom: '0.7rem' }}>
+								Back End:<span style={{ position: 'absolute', right: '0' }}>||||||||||</span>
+							</li>
+							<li style={{ marginBottom: '0.7rem' }}>
+								Design:<span style={{ position: 'absolute', right: '0' }}>||||||||||</span>
+							</li>
+							<li style={{ marginBottom: '0.7rem' }}>
+								Photoshop:<span style={{ position: 'absolute', right: '0' }}>||||||||||</span>
+							</li>
+						</ul>
 					}
 				/>
 				<Card
