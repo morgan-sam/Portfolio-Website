@@ -6,10 +6,9 @@ export const thirdSectionStyle = {
 };
 
 export const titleStyle = {
+	margin: '2rem',
 	fontSize: '2rem',
-	textDecorationLine: 'underline',
-	top: '12%',
-	position: 'absolute'
+	textDecorationLine: 'underline'
 };
 
 export const subHeadingStyle = {
