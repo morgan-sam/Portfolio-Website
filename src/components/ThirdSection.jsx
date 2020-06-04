@@ -19,11 +19,7 @@ const ThirdSection = React.forwardRef((props, ref) => {
 			<div style={projectsContainerStyle}>
 				<div style={subContainerStyle}>
 					<div style={subHeadingStyle}>Train Tracks Game</div>
-					<img
-						style={{ ...imgStyles, objectFit: 'cover', width: '25rem' }}
-						src={traintracks}
-						alt="traintracks"
-					/>
+					<img style={{ ...imgStyles, width: '25rem' }} src={traintracks} alt="traintracks" />
 					<div style={linkTextStyle}>
 						<a href="https://morgan-sam.github.io/Train-Tracks-React/">Live</a> /{' '}
 						<a href="https://github.com/morgan-sam/Train-Tracks-React">Source Code</a>
@@ -31,7 +27,13 @@ const ThirdSection = React.forwardRef((props, ref) => {
 				</div>
 				<div style={subContainerStyle}>
 					<div style={subHeadingStyle}>Project Management Platform</div>
-					<img style={imgStyles} src={platform} alt="platform" />
+					<img
+						style={{
+							...imgStyles
+						}}
+						src={platform}
+						alt="platform"
+					/>
 					<div style={linkTextStyle}>
 						<a href="https://github.com/morgan-sam/Project-Management-Platform">Source Code</a>
 					</div>
