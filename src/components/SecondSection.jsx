@@ -18,8 +18,7 @@ const SecondSection = React.forwardRef((props, ref) => {
 			<div className={'cardContainer'}>
 				<Card
 					style={{
-						left: `${50 + cardGapPercentage}%`,
-						transform: 'translateX(-50%)'
+						left: `${50 + cardGapPercentage}%`
 					}}
 					title={'Bio'}
 					text={[
@@ -29,8 +28,7 @@ const SecondSection = React.forwardRef((props, ref) => {
 				/>
 				<Card
 					style={{
-						left: `${50 - cardGapPercentage}%`,
-						transform: 'translateX(-50%)'
+						left: `${50 - cardGapPercentage}%`
 					}}
 					title={'Skills'}
 					text={
@@ -70,8 +68,7 @@ const SecondSection = React.forwardRef((props, ref) => {
 				/>
 				<Card
 					style={{
-						left: `${50 + cardGapPercentage}%`,
-						transform: 'translateX(-50%)'
+						left: `${50 + cardGapPercentage}%`
 					}}
 					title={'Tech'}
 					text={[
