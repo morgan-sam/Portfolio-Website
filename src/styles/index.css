@@ -59,7 +59,8 @@ html {
 	color: white;
 	top: 0;
 	left: 100%;
-	margin-left: 5px;
+	margin-left: 1rem;
+	font-size: 3rem;
 }
 
 .hamburgerLine:nth-child(1) {
