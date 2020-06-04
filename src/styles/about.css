@@ -14,7 +14,8 @@
 	align-items: center;
 	justify-content: center;
 	width: 50rem;
-	height: 75%;
+	height: auto;
+	padding: var(--vertical-card-gap);
 }
 
 .line {
