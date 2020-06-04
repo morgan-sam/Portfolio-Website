@@ -31,8 +31,7 @@ const contactTextStyle = {
 	fontSize: '1.3rem',
 	margin: '0.35rem',
 	textAlign: 'center',
-	backgroundColor: '#555',
-	color: 'white'
+	color: '#444'
 };
 
 const FourthSection = () => {
@@ -42,7 +41,9 @@ const FourthSection = () => {
 			<div style={contactContainerStyle}>
 				<div style={contactTextStyle}>Contact</div>
 				<div style={contactTextStyle}>hello@smorgan.dev</div>
-				<div style={contactTextStyle}>https://github.com/morgan-sam</div>
+				<div style={contactTextStyle}>
+					<a href="https://github.com/morgan-sam">https://github.com/morgan-sam</a>
+				</div>
 				<div style={contactTextStyle}>Curriculum Vitae</div>
 				<div style={contactTextStyle}>© 2020</div>
 			</div>
