@@ -23,5 +23,6 @@ html {
 	}
 	.aboutSection {
 		height: auto;
+		padding: 5rem 0;
 	}
 }
