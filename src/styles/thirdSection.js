@@ -24,13 +24,15 @@ export const imgStyles = {
 	border: '1px solid #444'
 };
 
-export const imgContainerStyle = {
-	display: 'flex'
+export const projectsContainerStyle = {
+	display: 'grid',
+	gridTemplateColumns: '1fr 1fr'
 };
 
 export const subContainerStyle = {
 	display: 'flex',
 	flexDirection: 'column',
+	alignItems: 'center',
 	margin: '1rem'
 };
 
