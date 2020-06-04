@@ -31,7 +31,7 @@ const NavButton = (props) => {
 		backgroundColor: colors.hover.background,
 		zIndex: '-1',
 		transform: hover ? 'rotate(30deg) translate(-20%, 0%)' : 'rotate(30deg) translate(-50%, 150%)',
-		transition: '0.35s transform ease-in-out'
+		transition: '0.35s transform ease-in-out, 0.35s background ease-in-out'
 	};
 
 	return (
