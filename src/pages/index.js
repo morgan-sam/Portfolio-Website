@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import TopNavBar from '../components/TopNavBar';
-import FirstSection from '../components/FirstSection';
-import SecondSection from '../components/SecondSection';
-import ThirdSection from '../components/ThirdSection';
-import FourthSection from '../components/FourthSection';
+import Splash from '../components/Splash';
+import About from '../components/About';
+import Projects from '../components/Projects';
+import Contact from '../components/Contact';
 
 export default function Home() {
 	const [ scrollPosition, setScrollPosition ] = useState(0);
@@ -39,10 +39,10 @@ export default function Home() {
 	return (
 		<div>
 			<TopNavBar currentSection={currentSection} handleClicks={handleClicks} />
-			<FirstSection ref={firstRef} />
-			<SecondSection ref={secondRef} />
-			<ThirdSection ref={thirdRef} />
-			<FourthSection ref={fourthRef} />
+			<Splash ref={firstRef} />
+			<About ref={secondRef} />
+			<Projects ref={thirdRef} />
+			<Contact ref={fourthRef} />
 		</div>
 	);
 }
