@@ -1,5 +1,3 @@
-import { sectionStyle } from './default';
-
 export const firstSectionStyle = {
 	//
 };
