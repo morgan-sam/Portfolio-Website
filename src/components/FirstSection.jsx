@@ -1,5 +1,5 @@
 import React from 'react';
-import { firstSectionStyle, backgroundStyle, titleStyle } from '../styles/homePage';
+import { firstSectionStyle, backgroundStyle, titleStyle } from '../styles/firstSection';
 
 const FirstSection = React.forwardRef((props, ref) => {
 	return (
