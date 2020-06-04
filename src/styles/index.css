@@ -22,10 +22,16 @@ html {
 }
 
 .hamburger {
-	color: white;
+	display: none;
+	position: relative;
 	position: fixed;
+	z-index: 1;
 	top: 1.5rem;
 	left: 1.5rem;
+}
+
+.hamburgerButton {
+	color: white;
 	height: 3rem;
 	width: 3rem;
 	border: 2px solid white;
@@ -34,7 +40,7 @@ html {
 	flex-direction: column;
 	cursor: pointer;
 	z-index: 1;
-	display: none;
+	display: flex;
 }
 
 .hamburgerLine {
@@ -46,6 +52,14 @@ html {
 	transform: translateY(-50%);
 	background: white;
 	transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.hamburgerDropdown {
+	position: absolute;
+	color: white;
+	top: 0;
+	left: 100%;
+	margin-left: 5px;
 }
 
 .hamburgerLine:nth-child(1) {
@@ -91,6 +105,6 @@ html {
 		display: none;
 	}
 	.hamburger {
-		display: flex;
+		display: block;
 	}
 }
