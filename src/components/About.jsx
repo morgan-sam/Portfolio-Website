@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card';
+import SkillLevel from './SkillLevel';
 
 const skillLevels = [
 	{ skill: 'Programming', level: 10 },
@@ -25,36 +26,7 @@ const About = React.forwardRef((props, ref) => {
 					title={'Skills'}
 					text={
 						<ul style={{ width: '100%', position: 'relative' }}>
-							{skillLevels.map((el) => (
-								<li style={{ marginBottom: '0.7rem' }}>
-									{`${el.skill}:`}
-									<div
-										style={{
-											display: 'inline-block',
-											position: 'absolute',
-											right: '0'
-										}}
-									>
-										<div
-											style={{
-												display: 'inline-block',
-												color: '#000'
-											}}
-										>
-											{[ ...Array(el.level).keys() ].map((p) => '|')}
-										</div>
-										<div
-											style={{
-												display: 'inline-block',
-												color: '#ccc'
-											}}
-										>
-											{' '}
-											{[ ...Array(10 - el.level).keys() ].map((p) => '|')}
-										</div>
-									</div>
-								</li>
-							))}
+							{skillLevels.map((el) => <SkillLevel {...el} />)}
 						</ul>
 					}
 				/>
