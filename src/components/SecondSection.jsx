@@ -87,7 +87,7 @@ const SecondSection = React.forwardRef((props, ref) => {
 					title={'Tech'}
 					text={[
 						'Using:',
-						'HTML, CSS, JavaScript, React, PostgreSQL, Webpack, Jest, Linux',
+						'HTML, CSS, JavaScript, React, PostgreSQL, Node, Webpack, Jest, Linux',
 						'Also used:',
 						'Python, MongoDB, Bash'
 					]}
