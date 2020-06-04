@@ -8,6 +8,14 @@ import {
 	cardContainerStyle
 } from '../styles/secondSection';
 
+const skillLevels = [
+	{ skill: 'Programming', level: 10 },
+	{ skill: 'Front End', level: 10 },
+	{ skill: 'Back End', level: 8 },
+	{ skill: 'Design', level: 8 },
+	{ skill: 'Photoshop', level: 8 }
+];
+
 const SecondSection = React.forwardRef((props, ref) => {
 	return (
 		<div style={secondSectionStyle} ref={ref}>
@@ -36,21 +44,12 @@ const SecondSection = React.forwardRef((props, ref) => {
 					title={'Skills'}
 					text={
 						<ul style={{ width: '100%', position: 'relative' }}>
-							<li style={{ marginBottom: '0.7rem' }}>
-								Programming:<span style={{ position: 'absolute', right: '0' }}>||||||||||</span>
-							</li>
-							<li style={{ marginBottom: '0.7rem' }}>
-								Front End:<span style={{ position: 'absolute', right: '0' }}>||||||||||</span>
-							</li>
-							<li style={{ marginBottom: '0.7rem' }}>
-								Back End:<span style={{ position: 'absolute', right: '0' }}>||||||||||</span>
-							</li>
-							<li style={{ marginBottom: '0.7rem' }}>
-								Design:<span style={{ position: 'absolute', right: '0' }}>||||||||||</span>
-							</li>
-							<li style={{ marginBottom: '0.7rem' }}>
-								Photoshop:<span style={{ position: 'absolute', right: '0' }}>||||||||||</span>
-							</li>
+							{skillLevels.map((el) => (
+								<li style={{ marginBottom: '0.7rem' }}>
+									{`${el.skill}:`}
+									<span style={{ position: 'absolute', right: '0' }}>||||||||||</span>
+								</li>
+							))}
 						</ul>
 					}
 				/>
