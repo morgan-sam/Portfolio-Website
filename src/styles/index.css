@@ -25,4 +25,8 @@ html {
 		height: auto;
 		padding: 5rem 0;
 	}
+	.contactImage {
+		min-width: 100%;
+		min-height: 100%;
+	}
 }
