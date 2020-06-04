@@ -1,0 +1,23 @@
+.contactSection {
+	background-color: #f2f8fb;
+}
+
+.contactContainer {
+	position: absolute;
+	height: 20rem;
+	width: 20rem;
+	background-color: #efeeff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 100%;
+	background-color: #fff;
+}
+
+.contactText {
+	font-size: 1.3rem;
+	margin: 0.35rem;
+	text-align: center;
+	color: #444;
+}

@@ -1,21 +1,22 @@
 import React from 'react';
 
-import { imageURL, fourthSectionStyle, contactContainerStyle, contactTextStyle } from '../styles/fourthSection';
+const imageURL =
+	'https://images.unsplash.com/photo-1448838520990-b0f959a7da46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80';
 
 const FourthSection = React.forwardRef((props, ref) => {
 	return (
-		<div className={'section'} style={fourthSectionStyle} ref={ref}>
+		<div className={'section contactSection'} ref={ref}>
 			<img src={imageURL} style={{ height: '40rem' }} />
-			<div style={contactContainerStyle}>
-				<div style={contactTextStyle}>Contact</div>
-				<div style={contactTextStyle}>hello@smorgan.dev</div>
-				<div style={contactTextStyle}>
+			<div className={'contactContainer'}>
+				<div className={'contactText'}>Contact</div>
+				<div className={'contactText'}>hello@smorgan.dev</div>
+				<div className={'contactText'}>
 					<a href="https://github.com/morgan-sam">https://github.com/morgan-sam</a>
 				</div>
-				<div style={contactTextStyle}>
+				<div className={'contactText'}>
 					<a href="smorgan.dev/cv">Curriculum Vitae</a>
 				</div>
-				<div style={contactTextStyle}>© 2020</div>
+				<div className={'contactText'}>© 2020</div>
 			</div>
 		</div>
 	);
