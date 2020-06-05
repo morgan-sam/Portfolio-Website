@@ -11,14 +11,13 @@
 
 .hamburger {
 	display: none;
-	position: relative;
-	position: fixed;
 	z-index: 1;
 	top: 1.5rem;
 	left: 1.5rem;
 }
 
 .hamburgerButton {
+	position: relative;
 	color: white;
 	height: 3rem;
 	width: 3rem;
@@ -29,9 +28,11 @@
 	cursor: pointer;
 	z-index: 1;
 	display: flex;
+	margin: 1rem;
 }
 
 .hamburgerLine {
+	position: absolute;
 	height: 5%;
 	width: 70%;
 	background-color: white;

@@ -16,18 +16,17 @@ const Navigation = (props) => {
 	return (
 		<div className={'navigation'}>
 			<Hamburger hamburgerOpen={hamburgerOpen} onChange={() => setHamburgerOpen(!hamburgerOpen)} />
-			{hamburgerOpen && (
-				<div className={'navBtnContainer'}>
-					{buttons.map((el, i) => (
-						<NavButton
-							key={i}
-							text={el}
-							className={getCurrentBtnClass(props.currentSection)}
-							handleClick={props.handleClicks[i]}
-						/>
-					))}
-				</div>
-			)}
+
+			<div className={`navBtnContainer ${hamburgerOpen ? 'open' : null}`}>
+				{buttons.map((el, i) => (
+					<NavButton
+						key={i}
+						text={el}
+						className={getCurrentBtnClass(props.currentSection)}
+						handleClick={props.handleClicks[i]}
+					/>
+				))}
+			</div>
 		</div>
 	);
 };
