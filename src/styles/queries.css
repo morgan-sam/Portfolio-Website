@@ -75,6 +75,9 @@
 		background: none;
 		border: 1px solid white;
 	}
+	.navBtnContainer.open > *:hover {
+		color: black;
+	}
 	.btnBackground {
 		height: 500%;
 	}
