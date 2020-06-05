@@ -23,7 +23,7 @@
 	transform: rotate(30deg) translate(-50%, 150%);
 }
 
-.btnBackground.hover {
+.navBtn:hover > .btnBackground {
 	transform: rotate(30deg) translate(-20%, 0%);
 }
 
@@ -32,11 +32,11 @@
 	border: 1px solid white;
 	background-color: transparent;
 }
-.splashBtn.navBtn.hover {
+.splashBtn.navBtn:hover {
 	color: black;
 	border: 1px solid white;
 }
-.splashBtn.btnBackground.hover {
+.splashBtn.navBtn:hover > .btnBackground {
 	background-color: white;
 }
 
@@ -45,11 +45,11 @@
 	border: 1px solid black;
 	background-color: transparent;
 }
-.aboutBtn.navBtn.hover {
+.aboutBtn.navBtn:hover {
 	color: black;
 	border: 1px solid black;
 }
-.aboutBtn.btnBackground.hover {
+.aboutBtn.navBtn:hover > .btnBackground {
 	background-color: white;
 }
 
@@ -58,11 +58,11 @@
 	border: 1px solid black;
 	background-color: #fff;
 }
-.projectsBtn.navBtn.hover {
+.projectsBtn.navBtn:hover {
 	color: black;
 	border: 1px solid black;
 }
-.projectsBtn.btnBackground.hover {
+.projectsBtn.navBtn:hover > .btnBackground {
 	background-color: #eee;
 }
 
@@ -71,10 +71,10 @@
 	border: 1px solid #2b0e0e;
 	background-color: #efeeff;
 }
-.contactBtn.navBtn.hover {
+.contactBtn.navBtn:hover {
 	color: #779ecb;
 	border: 1px solid #779ecb;
 }
-.contactBtn.btnBackground.hover {
+.contactBtn.navBtn:hover > .btnBackground {
 	background-color: #f6eded;
 }
