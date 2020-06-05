@@ -84,7 +84,7 @@ html {
 	transform: rotate(-45deg) translate(25%, -350%);
 }
 
-@media only screen and (max-width: 1600.hamburgerLinex) {
+@media only screen and (max-width: 1600px) {
 	.projectContainer {
 		flex-direction: column;
 	}
@@ -101,11 +101,11 @@ html {
 	}
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
 	.navbar {
 		display: none;
 	}
 	.hamburger {
 		display: block;
 	}
-}
+} */
