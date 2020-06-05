@@ -26,7 +26,7 @@ const About = React.forwardRef((props, ref) => {
 					title={'Skills'}
 					text={
 						<ul style={{ width: '100%', position: 'relative' }}>
-							{skillLevels.map((el) => <SkillLevel {...el} />)}
+							{skillLevels.map((el, i) => <SkillLevel key={i} {...el} />)}
 						</ul>
 					}
 				/>
