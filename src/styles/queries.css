@@ -70,6 +70,11 @@
 		display: flex;
 		flex-direction: column;
 	}
+	.navBtnContainer.open > * {
+		color: white;
+		background: none;
+		border: 1px solid white;
+	}
 	.splashTitle {
 		margin: 5rem;
 	}
