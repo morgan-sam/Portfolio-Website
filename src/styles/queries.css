@@ -15,21 +15,6 @@
 	}
 }
 
-@media only screen and (max-width: 600px) {
-	.navbar {
-		display: none;
-	}
-	.hamburger {
-		display: block;
-	}
-}
-
-@media only screen and (max-width: 720px) {
-	.card:nth-child(n) {
-		margin: 1rem;
-	}
-}
-
 @media only screen and (max-width: 1000px) {
 	.projectSubContainer {
 		border: none;
@@ -39,5 +24,20 @@
 	.projectImg {
 		width: 100%;
 		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+	.card:nth-child(n) {
+		margin: 1rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.navbar {
+		display: none;
+	}
+	.hamburger {
+		display: block;
 	}
 }
