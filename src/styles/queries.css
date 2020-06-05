@@ -45,11 +45,11 @@
 }
 
 @media only screen and (max-width: 600px) {
-	.navbar {
-		display: none;
-	}
 	.hamburger {
 		display: block;
+	}
+	.navBtnContainer {
+		flex-direction: column;
 	}
 	.splashTitle {
 		margin: 5rem;

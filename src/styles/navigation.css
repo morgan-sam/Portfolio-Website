@@ -1,0 +1,72 @@
+.navigation {
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	z-index: 10;
+}
+
+.navBtnContainer {
+	display: flex;
+}
+
+.hamburger {
+	display: none;
+	position: relative;
+	position: fixed;
+	z-index: 1;
+	top: 1.5rem;
+	left: 1.5rem;
+}
+
+.hamburgerButton {
+	color: white;
+	height: 3rem;
+	width: 3rem;
+	border: 2px solid white;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	cursor: pointer;
+	z-index: 1;
+	display: flex;
+}
+
+.hamburgerLine {
+	height: 5%;
+	width: 70%;
+	background-color: white;
+	position: absolute;
+	z-index: 1;
+	transform: translateY(-50%);
+	background: white;
+	transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.hamburgerDropdown {
+	position: absolute;
+	color: white;
+	top: 0;
+	left: 100%;
+	margin-left: 1rem;
+	font-size: 3rem;
+}
+
+.hamburgerLine:nth-child(1) {
+	top: 25%;
+}
+.hamburgerLine:nth-child(2) {
+	top: 50%;
+}
+.hamburgerLine:nth-child(3) {
+	top: 75%;
+}
+
+.openHamburgerLine:nth-child(1) {
+	transform: rotate(45deg) translate(25%, 350%);
+}
+.openHamburgerLine:nth-child(2) {
+	opacity: 0;
+}
+.openHamburgerLine:nth-child(3) {
+	transform: rotate(-45deg) translate(25%, -350%);
+}
