@@ -14,7 +14,7 @@ const Navigation = (props) => {
 	};
 
 	return (
-		<div className={'navigation'}>
+		<div className={`navigation ${hamburgerOpen ? 'open' : null}`}>
 			<Hamburger hamburgerOpen={hamburgerOpen} onChange={() => setHamburgerOpen(!hamburgerOpen)} />
 
 			<div className={`navBtnContainer ${hamburgerOpen ? 'open' : null}`}>
