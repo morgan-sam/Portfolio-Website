@@ -40,4 +40,7 @@
 	.hamburger {
 		display: block;
 	}
+	.splashTitle {
+		margin: 5rem;
+	}
 }
