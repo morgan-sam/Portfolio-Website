@@ -31,8 +31,10 @@
 	}
 
 	.traintracksImg {
-		width: 13rem;
-		height: 13rem;
+		width: 20rem;
+		height: 20rem;
+		transform: scale(1.4);
+		clip-path: inset(2.5rem 4rem);
 	}
 }
 
