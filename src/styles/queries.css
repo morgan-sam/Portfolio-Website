@@ -75,6 +75,9 @@
 		background: none;
 		border: 1px solid white;
 	}
+	.btnBackground {
+		height: 500%;
+	}
 	.splashTitle {
 		margin: 5rem;
 	}
