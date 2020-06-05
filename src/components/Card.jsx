@@ -3,47 +3,10 @@ import React from 'react';
 const Card = (props) => {
 	const { title, text } = props;
 
-	const cardStyle = {
-		position: 'relative',
-		border: '5px solid #444',
-		borderRadius: '10%',
-		boxShadow: '6px 10px #888',
-		backgroundColor: '#fff',
-		overflow: 'hidden'
-	};
-
-	const titleStyle = {
-		margin: '1.5rem auto 0 auto',
-		display: 'block',
-		textAlign: 'center',
-		fontSize: '2rem',
-		textDecorationLine: 'underline'
-	};
-
-	const textStyle = {
-		display: 'block',
-		margin: '0.5rem auto 1.5rem auto',
-		width: '80%',
-		fontSize: '1.2rem',
-		boxSizing: 'border-box',
-		overflow: 'hidden',
-		padding: '1rem'
-	};
-
-	const fadeOverlayStyle = {
-		position: 'absolute',
-		top: '0',
-		left: '0',
-		height: '100%',
-		width: '100%',
-		borderRadius: '10%',
-		background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1) 100%)'
-	};
-
 	return (
-		<div className={'card'} style={cardStyle}>
-			<div style={titleStyle}>{title}</div>
-			<div style={textStyle}>
+		<div className={'card'}>
+			<div className={'cardTitle'}>{title}</div>
+			<div className={'cardText'}>
 				{Array.isArray(text) ? (
 					text.map((el, i) => (
 						<p key={i} style={{ marginBottom: '10px' }}>
@@ -53,7 +16,7 @@ const Card = (props) => {
 				) : (
 					text
 				)}
-				<div style={fadeOverlayStyle} />
+				<div className={'cardFadeOverlay'} />
 			</div>
 		</div>
 	);
