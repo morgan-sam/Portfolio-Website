@@ -78,7 +78,6 @@ html {
 	transform: rotate(45deg) translate(25%, 350%);
 }
 .openHamburgerLine:nth-child(2) {
-	transform: rotate(90deg);
 	opacity: 0;
 }
 .openHamburgerLine:nth-child(3) {
