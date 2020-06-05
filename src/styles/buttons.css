@@ -1,0 +1,80 @@
+.navBtn {
+	position: relative;
+	margin: 0.4rem 0.6rem;
+	padding: 0.6rem 1.4rem;
+	overflow: hidden;
+	transition: 0.35s color ease-in-out, 0.35s border ease-in-out, 0.35s background ease-in-out;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.navBtnText {
+	z-index: 2;
+}
+
+.btnBackground {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200%;
+	height: 250%;
+	z-index: -1;
+	transition: 0.35s transform ease-in-out, 0.35s background ease-in-out;
+	transform: rotate(30deg) translate(-50%, 150%);
+}
+
+.btnBackground.hover {
+	transform: rotate(30deg) translate(-20%, 0%);
+}
+
+.splashBtn.navBtn {
+	color: white;
+	border: 1px solid white;
+	background-color: transparent;
+}
+.splashBtn.navBtn.hover {
+	color: black;
+	border: 1px solid white;
+}
+.splashBtn.btnBackground.hover {
+	background-color: white;
+}
+
+.aboutBtn.navBtn {
+	color: black;
+	border: 1px solid black;
+	background-color: transparent;
+}
+.aboutBtn.navBtn.hover {
+	color: black;
+	border: 1px solid black;
+}
+.aboutBtn.btnBackground.hover {
+	background-color: white;
+}
+
+.projectsBtn.navBtn {
+	color: black;
+	border: 1px solid black;
+	background-color: #fff;
+}
+.projectsBtn.navBtn.hover {
+	color: black;
+	border: 1px solid black;
+}
+.projectsBtn.btnBackground.hover {
+	background-color: #eee;
+}
+
+.contactBtn.navBtn {
+	color: #2b0e0e;
+	border: 1px solid #2b0e0e;
+	background-color: #efeeff;
+}
+.contactBtn.navBtn.hover {
+	color: #779ecb;
+	border: 1px solid #779ecb;
+}
+.contactBtn.btnBackground.hover {
+	background-color: #f6eded;
+}
