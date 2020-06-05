@@ -6,6 +6,7 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 
 export default function Home() {
+	const [ hamburgerOpen, setHamburgerOpen ] = useState(false);
 	const [ scrollPosition, setScrollPosition ] = useState(0);
 	const [ currentSection, setCurrentSection ] = useState(0);
 
@@ -36,9 +37,28 @@ export default function Home() {
 		[ scrollPosition ]
 	);
 
+	useEffect(
+		() => {
+			const stopEvent = (e) => {
+				e.preventDefault();
+				e.stopImmediatePropagation();
+			};
+			if (hamburgerOpen) {
+				document.body.addEventListener('touchmove', stopEvent, { passive: false });
+				return () => document.body.removeEventListener('touchmove', stopEvent, { passive: false });
+			}
+		},
+		[ hamburgerOpen ]
+	);
+
 	return (
 		<div>
-			<Navigation currentSection={currentSection} handleClicks={handleClicks} />
+			<Navigation
+				currentSection={currentSection}
+				handleClicks={handleClicks}
+				hamburgerOpen={hamburgerOpen}
+				setHamburgerOpen={setHamburgerOpen}
+			/>
 			<Splash ref={firstRef} />
 			<About ref={secondRef} />
 			<Projects ref={thirdRef} />

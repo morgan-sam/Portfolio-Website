@@ -3,7 +3,7 @@ import Hamburger from './Hamburger';
 import NavButton from './NavButton';
 
 const Navigation = (props) => {
-	const [ hamburgerOpen, setHamburgerOpen ] = useState(false);
+	const { hamburgerOpen, setHamburgerOpen } = props;
 	const buttons = [ 'home', 'about', 'projects', 'contact' ];
 
 	const getCurrentBtnClass = (section) => {
