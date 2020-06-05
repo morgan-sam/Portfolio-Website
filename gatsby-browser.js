@@ -4,3 +4,4 @@ import './src/styles/splash.css';
 import './src/styles/about.css';
 import './src/styles/projects.css';
 import './src/styles/contact.css';
+import './src/styles/queries.css';

@@ -83,29 +83,3 @@ html {
 .openHamburgerLine:nth-child(3) {
 	transform: rotate(-45deg) translate(25%, -350%);
 }
-
-@media only screen and (max-width: 1600px) {
-	.projectContainer {
-		flex-direction: column;
-	}
-	.projectSection {
-		height: auto;
-	}
-	.aboutSection {
-		height: auto;
-		padding: 5rem 0;
-	}
-	.contactImage {
-		min-width: 100%;
-		min-height: 100%;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	.navbar {
-		display: none;
-	}
-	.hamburger {
-		display: block;
-	}
-}
