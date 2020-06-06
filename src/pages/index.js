@@ -5,6 +5,8 @@ import About from '../components/About';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 
+const navbarHeight = 40;
+
 export default function Home() {
 	const [ hamburgerOpen, setHamburgerOpen ] = useState(false);
 	const [ scrollPosition, setScrollPosition ] = useState(0);
@@ -29,10 +31,10 @@ export default function Home() {
 
 	useEffect(
 		() => {
-			if (scrollPosition < 940) setCurrentSection(0);
-			else if (scrollPosition < 1910) setCurrentSection(1);
-			else if (scrollPosition < 2890) setCurrentSection(2);
-			else setCurrentSection(3);
+			if (scrollPosition > fourthRef.current.offsetTop - navbarHeight) setCurrentSection(3);
+			else if (scrollPosition > thirdRef.current.offsetTop - navbarHeight) setCurrentSection(2);
+			else if (scrollPosition > secondRef.current.offsetTop - navbarHeight) setCurrentSection(1);
+			else setCurrentSection(0);
 		},
 		[ scrollPosition ]
 	);
