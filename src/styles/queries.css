@@ -53,7 +53,7 @@
 		width: 100%;
 		height: auto;
 		background-color: rgba(100, 100, 100, 0.8);
-		transition: min-height 0.5s ease-in-out;
+		transition: min-height 1s cubic-bezier(.21, 1, .07, .91);
 		min-height: 5rem;
 		overflow: hidden;
 	}
@@ -68,7 +68,7 @@
 		transform: translate(-50%, -50%);
 		width: 15rem;
 		opacity: 0;
-		transition: opacity 0.2s ease-in-out;
+		transition: opacity 0.2s cubic-bezier(.21, 1, .07, .91);
 	}
 	.navBtnContainer.open {
 		opacity: 1;
