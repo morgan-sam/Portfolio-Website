@@ -63,7 +63,7 @@ export default function Home() {
 			/>
 			<Splash ref={firstRef} />
 			<About ref={secondRef} />
-			<Projects ref={thirdRef} />
+			<Projects ref={thirdRef} scrollPosition={scrollPosition} />
 			<Contact ref={fourthRef} />
 		</div>
 	);
