@@ -9,7 +9,9 @@ const Projects = React.forwardRef((props, ref) => {
 			<div className={'projectContainer'}>
 				<div className={'projectSubContainer'}>
 					<div className={'projectSubHeading'}>Train Tracks Game</div>
-					<img className={'projectImg traintracksImg'} src={traintracks} alt="traintracks" />
+					<div className={'projectImgWrap'}>
+						<img className={'projectImg traintracksImg'} src={traintracks} alt="traintracks" />
+					</div>
 					<div className={'linkTextStyle'}>
 						<a href="https://morgan-sam.github.io/Train-Tracks-React/">Live</a> /{' '}
 						<a href="https://github.com/morgan-sam/Train-Tracks-React">Source Code</a>
@@ -17,7 +19,9 @@ const Projects = React.forwardRef((props, ref) => {
 				</div>
 				<div className={'projectSubContainer'}>
 					<div className={'projectSubHeading'}>Project Management Platform</div>
-					<img className={'projectImg platformImg'} src={platform} alt="platform" />
+					<div className={'projectImgWrap'}>
+						<img className={'projectImg platformImg'} src={platform} alt="platform" />
+					</div>
 					<div className={'linkTextStyle'}>
 						<a href="https://github.com/morgan-sam/Project-Management-Platform">Source Code</a>
 					</div>

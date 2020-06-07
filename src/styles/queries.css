@@ -24,9 +24,15 @@
 		width: 80%;
 	}
 
+	.projectImgWrap {
+		filter: drop-shadow(0px 1px 0 #444) drop-shadow(0px -1px 0 #444) drop-shadow(1px 0px 0 #444)
+			drop-shadow(-1px 0px 0 #444);
+	}
+
 	.projectImg {
 		height: 10rem;
 		margin: 0 auto;
+		border: none;
 	}
 
 	.traintracksImg {
