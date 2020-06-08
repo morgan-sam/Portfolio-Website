@@ -1,13 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const FadeIn = (props) => {
+	const { delay } = props;
 	const [ visible, setVisible ] = useState(false);
 	const ref = useRef();
 
 	useEffect(
 		() => {
 			const observer = new IntersectionObserver(
-				(entries) => entries.forEach((entry) => setVisible(entry.isIntersecting)),
+				(entries) => entries.forEach((entry) => setTimeout(() => setVisible(entry.isIntersecting), delay)),
 				{ rootMargin: '0px 0px -200px 0px' }
 			);
 			observer.observe(ref.current);

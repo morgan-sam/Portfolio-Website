@@ -104,6 +104,7 @@
 		white-space: normal;
 	}
 	.fade-in {
+		transform: none;
 		opacity: 1;
 	}
 }
