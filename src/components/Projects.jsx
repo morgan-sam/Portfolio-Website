@@ -5,6 +5,7 @@ import platform from '../img/platform.jpeg';
 const Projects = React.forwardRef((props, ref) => {
 	const [ focused, setFocused ] = useState(null);
 	useEffect(() => setFocused(null), [ props.scrollPosition ]);
+	const mobileView = window.matchMedia('(max-width: 600px)').matches;
 
 	return (
 		<div className={'section projectSection'} ref={ref}>
@@ -18,7 +19,7 @@ const Projects = React.forwardRef((props, ref) => {
 							src={traintracks}
 							alt="traintracks"
 							onClick={() => {
-								if (focused !== traintracks) setFocused(traintracks);
+								if (focused !== traintracks && !mobileView) setFocused(traintracks);
 								else setFocused(null);
 							}}
 						/>
@@ -36,7 +37,7 @@ const Projects = React.forwardRef((props, ref) => {
 							src={platform}
 							alt="platform"
 							onClick={() => {
-								if (focused !== platform) setFocused(platform);
+								if (focused !== platform && !mobileView) setFocused(platform);
 								else setFocused(null);
 							}}
 						/>
