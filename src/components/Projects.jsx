@@ -11,11 +11,11 @@ const Projects = React.forwardRef((props, ref) => {
 		<div className={'section projectSection'} ref={ref}>
 			<div className={'projectTitle'}>Projects</div>
 			<div className={'projectContainer'}>
-				<div className={`projectSubContainer`}>
+				<div className={`projectSubContainer ${focused === traintracks ? 'focused' : null}`}>
 					<div className={'projectSubHeading'}>Train Tracks Game</div>
 					<div className={'projectImgWrap'}>
 						<img
-							className={`projectImg traintracksImg ${focused === traintracks ? 'focused' : null}`}
+							className={`projectImg traintracksImg`}
 							src={traintracks}
 							alt="traintracks"
 							onClick={() => {
@@ -29,11 +29,11 @@ const Projects = React.forwardRef((props, ref) => {
 						<a href="https://github.com/morgan-sam/Train-Tracks-React">Source Code</a>
 					</div>
 				</div>
-				<div className={`projectSubContainer`}>
+				<div className={`projectSubContainer ${focused === platform ? 'focused' : null}`}>
 					<div className={'projectSubHeading'}>Project Management Platform</div>
 					<div className={'projectImgWrap'}>
 						<img
-							className={`projectImg platformImg ${focused === platform ? 'focused' : null}`}
+							className={`projectImg platformImg`}
 							src={platform}
 							alt="platform"
 							onClick={() => {
