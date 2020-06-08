@@ -103,4 +103,7 @@
 	.projectSubHeading {
 		white-space: normal;
 	}
+	.fade-in {
+		opacity: 1;
+	}
 }
