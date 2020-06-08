@@ -1,10 +1,11 @@
 import React from 'react';
+import FadeIn from './FadeIn';
 
 const Card = (props) => {
 	const { title, text } = props;
 
 	return (
-		<div className={'card'}>
+		<FadeIn className={'card'}>
 			<div className={'cardTitle'}>{title}</div>
 			<div className={'cardText'}>
 				{Array.isArray(text) ? (
@@ -18,7 +19,7 @@ const Card = (props) => {
 				)}
 				<div className={'cardFadeOverlay'} />
 			</div>
-		</div>
+		</FadeIn>
 	);
 };
 
