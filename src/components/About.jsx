@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card';
+import AboutCard from './AboutCard';
 import SkillLevel from './SkillLevel';
 
 const skillLevels = [
@@ -15,14 +15,14 @@ const About = React.forwardRef((props, ref) => {
 		<div className={'section aboutSection'} ref={ref}>
 			<div className={'line'} />
 			<div className={'cardContainer'}>
-				<Card
+				<AboutCard
 					title={'Bio'}
 					text={[
 						'I am a front end developer who loves programming and solving problems.',
 						'I like to build software from scratch using minimal libraries.'
 					]}
 				/>
-				<Card
+				<AboutCard
 					title={'Skills'}
 					text={
 						<ul style={{ width: '100%', position: 'relative' }}>
@@ -30,7 +30,7 @@ const About = React.forwardRef((props, ref) => {
 						</ul>
 					}
 				/>
-				<Card
+				<AboutCard
 					title={'Tech'}
 					text={[
 						'Using:',

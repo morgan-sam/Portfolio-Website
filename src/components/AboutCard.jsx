@@ -1,7 +1,7 @@
 import React from 'react';
 import FadeIn from './FadeIn';
 
-const Card = (props) => {
+const AboutCard = (props) => {
 	const { title, text } = props;
 
 	return (
@@ -23,4 +23,4 @@ const Card = (props) => {
 	);
 };
 
-export default Card;
+export default AboutCard;
