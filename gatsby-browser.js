@@ -10,4 +10,5 @@ import './src/styles/contact.css';
 import './src/styles/buttons.css';
 import './src/styles/card.css';
 
+import './src/styles/transitions.css';
 import './src/styles/queries.css';
