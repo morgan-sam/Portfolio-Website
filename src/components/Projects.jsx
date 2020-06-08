@@ -5,7 +5,6 @@ import platform from '../img/platform.jpeg';
 const Projects = React.forwardRef((props, ref) => {
 	const [ focused, setFocused ] = useState(null);
 	useEffect(() => setFocused(null), [ props.scrollPosition ]);
-	console.log(focused);
 
 	return (
 		<div className={'section projectSection'} ref={ref}>
@@ -19,8 +18,8 @@ const Projects = React.forwardRef((props, ref) => {
 							src={traintracks}
 							alt="traintracks"
 							onClick={() => {
-								if (focused === traintracks) setFocused(null);
-								else setFocused(traintracks);
+								if (focused !== traintracks) setFocused(traintracks);
+								else setFocused(null);
 							}}
 						/>
 					</div>
@@ -37,8 +36,8 @@ const Projects = React.forwardRef((props, ref) => {
 							src={platform}
 							alt="platform"
 							onClick={() => {
-								if (focused === platform) setFocused(null);
-								else setFocused(platform);
+								if (focused !== platform) setFocused(platform);
+								else setFocused(null);
 							}}
 						/>
 					</div>
