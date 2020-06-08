@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import FadeIn from './FadeIn';
 import ProjectCard from './ProjectCard';
 import traintracks from '../img/traintracks.jpeg';
 import platform from '../img/platform.jpeg';
@@ -15,7 +16,9 @@ const Projects = React.forwardRef((props, ref) => {
 
 	return (
 		<div className={'section projectSection'} ref={ref}>
-			<div className={'projectTitle'}>Projects</div>
+			<FadeIn>
+				<div className={'projectTitle'}>Projects</div>
+			</FadeIn>
 			<div className={'projectContainer'}>
 				<ProjectCard
 					fadeDelay={0}

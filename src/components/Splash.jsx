@@ -1,11 +1,14 @@
 import React from 'react';
+import FadeIn from './FadeIn';
 
 const Splash = React.forwardRef((props, ref) => {
 	return (
 		<div className={'section'} ref={ref}>
-			<div className={'splashTitle'}>
-				Sam Morgan<br />UK/USA Front End Developer
-			</div>
+			<FadeIn>
+				<div className={'splashTitle'}>
+					Sam Morgan<br />UK/USA Front End Developer
+				</div>
+			</FadeIn>
 			<div className={'splashBackground'} />
 		</div>
 	);
