@@ -6,17 +6,16 @@ const ProjectCard = (props) => {
 	return (
 		<div className={`projectSubContainer ${focused === img ? 'focused' : null}`}>
 			<div className={'projectSubHeading'}>{title}</div>
-			<div className={'projectImgWrap'}>
-				<img
-					className={`projectImg ${className}`}
-					src={img}
-					alt={className}
-					onClick={() => {
-						if (focused !== img && !mobileView) setFocused(img);
-						else setFocused(null);
-					}}
-				/>
-			</div>
+			<div
+				className={`projectImg ${className}`}
+				onClick={() => {
+					if (focused !== img && !mobileView) setFocused(img);
+					else setFocused(null);
+				}}
+				style={{
+					backgroundImage: `url(${img})`
+				}}
+			/>
 			<div className={'linkTextStyle'}>
 				{live && <a href={live}>Live</a>}
 				{live && source && ' / '}

@@ -2,18 +2,24 @@
 	.projectTitle {
 		margin-top: 8rem;
 	}
+	.projectSection {
+		padding: 2rem;
+	}
 	.projectContainer {
 		flex-direction: column;
+		transition: 0;
 	}
 	.projectSubContainer {
-		width: auto;
+		width: 100%;
+		height: 100%;
 	}
 	.projectImg {
-		margin: 0;
+		height: 30rem;
 	}
 	.projectSection {
-		height: auto;
+		height: 100%;
 		padding-bottom: 4rem;
+		transition: 0;
 	}
 	.aboutSection {
 		height: auto;
@@ -30,22 +36,9 @@
 		width: 80%;
 	}
 
-	.projectImgWrap {
-		filter: drop-shadow(0px 1px 0 #444) drop-shadow(0px -1px 0 #444) drop-shadow(1px 0px 0 #444)
-			drop-shadow(-1px 0px 0 #444);
-	}
-
 	.projectImg {
-		height: 10rem;
 		margin: 0 auto;
 		border: none;
-	}
-
-	.traintracksImg {
-		width: 20rem;
-		height: 20rem;
-		transform: scale(1.4);
-		clip-path: inset(2.5rem 4rem);
 	}
 }
 
@@ -99,6 +92,9 @@
 	}
 	.splashTitle {
 		margin: 5rem;
+	}
+	.projectImg {
+		height: 10rem;
 	}
 	.projectSubContainer {
 		border: none;

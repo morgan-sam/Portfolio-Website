@@ -1,9 +1,10 @@
 .focused {
-	width: 50%;
+	height: 100%;
+	width: 100%;
 }
 
-.focused > * > img {
-	transform: scale(2);
+.focused > .projectImg {
+	transform: scale(1.9);
 	transition: 1s;
 }
 
