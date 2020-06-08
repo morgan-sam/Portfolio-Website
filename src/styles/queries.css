@@ -12,9 +12,15 @@
 	.projectSubContainer {
 		width: 100%;
 		height: 100%;
+		transition: 0s;
+	}
+	.projectSubContainer.fade-in {
+		transform: none;
+		opacity: 1;
 	}
 	.projectImg {
 		height: 30rem;
+		transition: 0s;
 	}
 	.projectSection {
 		height: 100%;
