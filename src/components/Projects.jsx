@@ -11,14 +11,17 @@ const Projects = React.forwardRef((props, ref) => {
 		<div className={'section projectSection'} ref={ref}>
 			<div className={'projectTitle'}>Projects</div>
 			<div className={'projectContainer'}>
-				<div className={'projectSubContainer'}>
+				<div className={`projectSubContainer`}>
 					<div className={'projectSubHeading'}>Train Tracks Game</div>
 					<div className={'projectImgWrap'}>
 						<img
-							className={'projectImg traintracksImg'}
+							className={`projectImg traintracksImg ${focused === traintracks ? 'focused' : null}`}
 							src={traintracks}
 							alt="traintracks"
-							onClick={() => setFocused(traintracks)}
+							onClick={() => {
+								if (focused === traintracks) setFocused(null);
+								else setFocused(traintracks);
+							}}
 						/>
 					</div>
 					<div className={'linkTextStyle'}>
@@ -26,14 +29,17 @@ const Projects = React.forwardRef((props, ref) => {
 						<a href="https://github.com/morgan-sam/Train-Tracks-React">Source Code</a>
 					</div>
 				</div>
-				<div className={'projectSubContainer'}>
+				<div className={`projectSubContainer`}>
 					<div className={'projectSubHeading'}>Project Management Platform</div>
 					<div className={'projectImgWrap'}>
 						<img
-							className={'projectImg platformImg'}
+							className={`projectImg platformImg ${focused === platform ? 'focused' : null}`}
 							src={platform}
 							alt="platform"
-							onClick={() => setFocused(platform)}
+							onClick={() => {
+								if (focused === platform) setFocused(null);
+								else setFocused(platform);
+							}}
 						/>
 					</div>
 					<div className={'linkTextStyle'}>
