@@ -6,7 +6,11 @@ import platform from '../img/platform.jpeg';
 const Projects = React.forwardRef((props, ref) => {
 	const [ focused, setFocused ] = useState(null);
 	useEffect(() => setFocused(null), [ props.scrollPosition ]);
-	const mobileView = window.matchMedia('(max-width: 600px)').matches;
+	const cardCommonProps = {
+		focused,
+		setFocused,
+		mobileView: window.matchMedia('(max-width: 600px)').matches
+	};
 
 	return (
 		<div className={'section projectSection'} ref={ref}>
@@ -18,18 +22,14 @@ const Projects = React.forwardRef((props, ref) => {
 					img={traintracks}
 					live={'https://morgan-sam.github.io/Train-Tracks-React/'}
 					source={'https://github.com/morgan-sam/Train-Tracks-React'}
-					focused={focused}
-					setFocused={setFocused}
-					mobileView={mobileView}
+					{...cardCommonProps}
 				/>
 				<ProjectCard
 					className={'platformImg'}
 					title={'Project Management Platform'}
 					img={platform}
 					source={'https://github.com/morgan-sam/Project-Management-Platform'}
-					focused={focused}
-					setFocused={setFocused}
-					mobileView={mobileView}
+					{...cardCommonProps}
 				/>
 			</div>
 		</div>
