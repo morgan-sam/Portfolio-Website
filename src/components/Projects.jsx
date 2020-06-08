@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ProjectCard from './ProjectCard';
 import traintracks from '../img/traintracks.jpeg';
 import platform from '../img/platform.jpeg';
 
@@ -11,41 +12,25 @@ const Projects = React.forwardRef((props, ref) => {
 		<div className={'section projectSection'} ref={ref}>
 			<div className={'projectTitle'}>Projects</div>
 			<div className={'projectContainer'}>
-				<div className={`projectSubContainer ${focused === traintracks ? 'focused' : null}`}>
-					<div className={'projectSubHeading'}>Train Tracks Game</div>
-					<div className={'projectImgWrap'}>
-						<img
-							className={`projectImg traintracksImg`}
-							src={traintracks}
-							alt="traintracks"
-							onClick={() => {
-								if (focused !== traintracks && !mobileView) setFocused(traintracks);
-								else setFocused(null);
-							}}
-						/>
-					</div>
-					<div className={'linkTextStyle'}>
-						<a href="https://morgan-sam.github.io/Train-Tracks-React/">Live</a> /{' '}
-						<a href="https://github.com/morgan-sam/Train-Tracks-React">Source Code</a>
-					</div>
-				</div>
-				<div className={`projectSubContainer ${focused === platform ? 'focused' : null}`}>
-					<div className={'projectSubHeading'}>Project Management Platform</div>
-					<div className={'projectImgWrap'}>
-						<img
-							className={`projectImg platformImg`}
-							src={platform}
-							alt="platform"
-							onClick={() => {
-								if (focused !== platform && !mobileView) setFocused(platform);
-								else setFocused(null);
-							}}
-						/>
-					</div>
-					<div className={'linkTextStyle'}>
-						<a href="https://github.com/morgan-sam/Project-Management-Platform">Source Code</a>
-					</div>
-				</div>
+				<ProjectCard
+					className={'traintracksImg'}
+					title={'Train Tracks Game'}
+					img={traintracks}
+					live={'https://morgan-sam.github.io/Train-Tracks-React/'}
+					source={'https://github.com/morgan-sam/Train-Tracks-React'}
+					focused={focused}
+					setFocused={setFocused}
+					mobileView={mobileView}
+				/>
+				<ProjectCard
+					className={'platformImg'}
+					title={'Project Management Platform'}
+					img={platform}
+					source={'https://github.com/morgan-sam/Project-Management-Platform'}
+					focused={focused}
+					setFocused={setFocused}
+					mobileView={mobileView}
+				/>
 			</div>
 		</div>
 	);
