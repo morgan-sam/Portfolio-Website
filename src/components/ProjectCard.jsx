@@ -1,10 +1,11 @@
 import React from 'react';
+import FadeIn from './FadeIn';
 
 const ProjectCard = (props) => {
 	const { className, title, img, live, source, focused, setFocused, mobileView } = props;
 
 	return (
-		<div className={`projectSubContainer ${focused === img ? 'focused' : null}`}>
+		<FadeIn className={`projectSubContainer ${focused === img ? 'focused' : null}`}>
 			<div className={'projectSubHeading'}>{title}</div>
 			<div
 				className={`projectImg ${className}`}
@@ -21,7 +22,7 @@ const ProjectCard = (props) => {
 				{live && source && ' / '}
 				{source && <a href={source}>Source Code</a>}
 			</div>
-		</div>
+		</FadeIn>
 	);
 };
 
