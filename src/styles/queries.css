@@ -5,6 +5,12 @@
 	.projectContainer {
 		flex-direction: column;
 	}
+	.projectSubContainer {
+		width: auto;
+	}
+	.projectImg {
+		margin: 0;
+	}
 	.projectSection {
 		height: auto;
 		padding-bottom: 4rem;
@@ -97,6 +103,9 @@
 	.projectSubContainer {
 		border: none;
 		background: none;
+	}
+	.projectSubHeading {
+		white-space: normal;
 	}
 }
 

@@ -31,13 +31,14 @@
 .platformImg {
 	transform-origin: 10% 33%;
 }
+
 .traintracksImg {
 	width: 25rem;
 }
+
 .pomodoroImg {
-	width: 50rem;
-	transform-origin: 1% 33%;
-	margin-left: 11rem;
+	margin-left: 19rem;
+	transform-origin: 10% 33%;
 }
 
 .projectContainer {
