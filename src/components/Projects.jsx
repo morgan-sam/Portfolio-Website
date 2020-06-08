@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ProjectCard from './ProjectCard';
 import traintracks from '../img/traintracks.jpeg';
 import platform from '../img/platform.jpeg';
+import pomodoro from '../img/pomodoro.jpeg';
 
 const Projects = React.forwardRef((props, ref) => {
 	const [ focused, setFocused ] = useState(null);
@@ -17,6 +18,13 @@ const Projects = React.forwardRef((props, ref) => {
 			<div className={'projectTitle'}>Projects</div>
 			<div className={'projectContainer'}>
 				<ProjectCard
+					className={'platformImg'}
+					title={'Project Management Platform'}
+					img={platform}
+					source={'https://github.com/morgan-sam/Project-Management-Platform'}
+					{...cardCommonProps}
+				/>
+				<ProjectCard
 					className={'traintracksImg'}
 					title={'Train Tracks Game'}
 					img={traintracks}
@@ -25,10 +33,10 @@ const Projects = React.forwardRef((props, ref) => {
 					{...cardCommonProps}
 				/>
 				<ProjectCard
-					className={'platformImg'}
-					title={'Project Management Platform'}
-					img={platform}
-					source={'https://github.com/morgan-sam/Project-Management-Platform'}
+					className={'pomodoroImg'}
+					title={'Pomodoro Tracker'}
+					img={pomodoro}
+					source={'https://github.com/morgan-sam/Pomodoro-Tracker'}
 					{...cardCommonProps}
 				/>
 			</div>

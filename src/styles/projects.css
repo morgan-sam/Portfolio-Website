@@ -10,6 +10,7 @@
 }
 
 .projectSubHeading {
+	white-space: nowrap;
 	text-align: center;
 	font-size: 2rem;
 	text-decoration-line: underline;
@@ -33,9 +34,15 @@
 .traintracksImg {
 	width: 25rem;
 }
+.pomodoroImg {
+	width: 50rem;
+	transform-origin: 1% 33%;
+	margin-left: 11rem;
+}
 
 .projectContainer {
 	display: flex;
+	width: 100%;
 }
 
 .projectSubContainer {
@@ -47,6 +54,8 @@
 	background-color: #eee;
 	border-radius: 2rem;
 	border: 2px solid #444;
+	transition: 1s;
+	width: 33%;
 }
 
 .linkTextStyle {
