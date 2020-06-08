@@ -29,7 +29,7 @@ const Projects = React.forwardRef((props, ref) => {
 					{...cardCommonProps}
 				/>
 				<ProjectCard
-					fadeDelay={250}
+					fadeDelay={200}
 					className={'traintracksImg'}
 					title={'Train Tracks Game'}
 					img={traintracks}
@@ -38,7 +38,7 @@ const Projects = React.forwardRef((props, ref) => {
 					{...cardCommonProps}
 				/>
 				<ProjectCard
-					fadeDelay={500}
+					fadeDelay={400}
 					className={'pomodoroImg'}
 					title={'Pomodoro Tracker'}
 					img={pomodoro}
