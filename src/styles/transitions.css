@@ -4,7 +4,7 @@
 }
 
 .focused > .projectImg {
-	transform: scale(1.9);
+	transform: scale(1.85);
 	transition: 1s;
 }
 

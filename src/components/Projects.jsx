@@ -11,7 +11,7 @@ const Projects = React.forwardRef((props, ref) => {
 	const cardCommonProps = {
 		focused,
 		setFocused,
-		mobileView: window.matchMedia('(max-width: 600px)').matches
+		mobileView: typeof window !== 'undefined' && window.matchMedia('(max-width: 600px)').matches
 	};
 
 	return (
