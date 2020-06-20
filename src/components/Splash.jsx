@@ -6,7 +6,10 @@ const Splash = React.forwardRef((props, ref) => {
 		<div className={'section'} ref={ref}>
 			<FadeIn>
 				<div className={'splashTitle'}>
-					Sam Morgan<br />UK/USA Front End Developer
+					<span>Sam Morgan</span>
+					<span>UK/USA</span>
+					<span>Front End</span>
+					<span>Developer</span>
 				</div>
 			</FadeIn>
 			<div className={'splashBackground'} />

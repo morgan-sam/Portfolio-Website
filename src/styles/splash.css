@@ -3,6 +3,21 @@
 	font-size: 2.2rem;
 }
 
+.splashTitle *:nth-child(1) {
+	display: block;
+}
+.splashTitle *:nth-child(2) {
+	display: inline;
+	padding-right: 0.5rem;
+}
+.splashTitle *:nth-child(3) {
+	display: inline;
+	padding-right: 0.5rem;
+}
+.splashTitle *:nth-child(4) {
+	display: inline;
+}
+
 .splashBackground {
 	position: absolute;
 	top: 0;

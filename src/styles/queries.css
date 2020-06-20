@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
 @media only screen and (max-width: 1600px) {
 	.projectTitle {
 		margin-top: 8rem;
@@ -103,6 +105,36 @@
 	}
 	.splashTitle {
 		margin: 5rem;
+		color: black;
+		text-transform: uppercase;
+		writing-mode: vertical-lr;
+		text-orientation: upright;
+		text-align: center;
+		font-size: 1.5rem;
+		height: 61vh;
+		font-family: 'Raleway', sans-serif;
+	}
+	.splashTitle *:nth-child(1) {
+		display: block;
+		padding: 0.5rem;
+	}
+	.splashTitle *:nth-child(2) {
+		display: block;
+		padding: 0.5rem;
+	}
+	.splashTitle *:nth-child(3) {
+		display: block;
+		padding-left: 0.5rem;
+	}
+	.splashTitle *:nth-child(4) {
+		display: block;
+	}
+	.splashBackground {
+		background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(45, 0.53, 82, 0.5), #000 90%),
+			url('https://images.unsplash.com/photo-1532993129198-5cce6e5c5ff2');
+		filter: brightness(0.9) contrast(1.2) saturate(1.7) hue-rotate(-20deg);
+		background-color: rgba(45, 13, 82, 0.7);
+		transform: scale(1, 1);
 	}
 	.projectImg {
 		height: 10rem;
