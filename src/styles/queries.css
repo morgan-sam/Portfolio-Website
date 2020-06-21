@@ -187,14 +187,16 @@
 		background-position: center;
 	}
 	.aboutSection {
-		background-color: #ddd;
+		background-color: rgb(97, 97, 97);
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAMElEQVQYlWNgQAOZmZnG6GIYAKYIr2J0SayKcZmAIp6ZmWn869cvnFYR5WayFBMNAGYJEW6+thgdAAAAAElFTkSuQmCC)
+			repeat;
 	}
 
 	.cardTitle {
 		text-decoration: none;
 	}
 	.card {
-		border: none;
+		border: 1px solid #aaa;
 	}
 	.line {
 		display: none;
