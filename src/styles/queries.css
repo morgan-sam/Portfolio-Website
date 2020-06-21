@@ -121,12 +121,40 @@
 		height: 61vh;
 	}
 
+	@keyframes fade-in-up {
+		from {
+			transform: translateY(2rem);
+			opacity: 0;
+		}
+		to {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+	@keyframes fade-in-down {
+		from {
+			transform: translateY(-2rem);
+			opacity: 0;
+		}
+		to {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
 	.splashTitle *:nth-child(1),
 	.splashTitle *:nth-child(2),
 	.splashTitle *:nth-child(3),
 	.splashTitle *:nth-child(4) {
 		display: block;
 		padding: 0.5rem;
+		opacity: 0;
+	}
+	.splashTitle *:nth-child(even) {
+		animation: fade-in-up 3s 1 forwards cubic-bezier(0, 1, .41, .97) 2s;
+	}
+
+	.splashTitle *:nth-child(odd) {
+		animation: fade-in-down 3s 1 forwards cubic-bezier(0, 1, .41, .97) 2s;
 	}
 
 	.splashBackground {
