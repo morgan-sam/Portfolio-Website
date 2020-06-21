@@ -244,10 +244,12 @@
 		text-decoration: none;
 	}
 	.contactImage {
-		background-image: url(https://images.unsplash.com/photo-1523612361257-94585d11ebe4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+		background-image: url(https://images.unsplash.com/photo-1543007368-ffc8f951f7f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
 		background-size: cover;
 		width: 100vw;
 		height: 100vh;
+		background-position: 47% 63%;
+		background-size: 250%;
 	}
 	.contactContainer {
 		border-radius: 0;
