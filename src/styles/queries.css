@@ -112,7 +112,6 @@
 		height: 500%;
 	}
 	.splashTitle {
-		margin: 5rem;
 		color: black;
 		text-transform: uppercase;
 		writing-mode: vertical-lr;
@@ -121,21 +120,15 @@
 		font-size: 1.5rem;
 		height: 61vh;
 	}
-	.splashTitle *:nth-child(1) {
-		display: block;
-		padding: 0.5rem;
-	}
-	.splashTitle *:nth-child(2) {
-		display: block;
-		padding: 0.5rem;
-	}
-	.splashTitle *:nth-child(3) {
-		display: block;
-		padding-left: 0.5rem;
-	}
+
+	.splashTitle *:nth-child(1),
+	.splashTitle *:nth-child(2),
+	.splashTitle *:nth-child(3),
 	.splashTitle *:nth-child(4) {
 		display: block;
+		padding: 0.5rem;
 	}
+
 	.splashBackground {
 		background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(45, 0.53, 82, 0.5), #000 90%),
 			url('https://images.unsplash.com/photo-1532993129198-5cce6e5c5ff2');
