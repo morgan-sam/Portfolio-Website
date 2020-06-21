@@ -23,7 +23,10 @@ const Navigation = (props) => {
 						key={i}
 						text={el}
 						className={getCurrentBtnClass(props.currentSection)}
-						handleClick={props.handleClicks[i]}
+						handleClick={() => {
+							props.handleClicks[i]();
+							setHamburgerOpen(false);
+						}}
 					/>
 				))}
 			</div>
