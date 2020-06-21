@@ -186,6 +186,9 @@
 		background-size: auto 100vh;
 		background-position: center;
 	}
+	.aboutSection {
+		background-color: #ddd;
+	}
 
 	.cardTitle {
 		text-decoration: none;
