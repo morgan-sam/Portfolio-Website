@@ -65,6 +65,11 @@
 	body {
 		font-family: 'Raleway', sans-serif;
 	}
+	a {
+		color: blue;
+		border-bottom: 1px solid blue;
+	}
+
 	.hamburger {
 		display: inline;
 	}
@@ -179,9 +184,5 @@
 	}
 	.contactText > * {
 		text-decoration: none;
-	}
-	a {
-		color: blue;
-		border-bottom: 1px solid blue;
 	}
 }
