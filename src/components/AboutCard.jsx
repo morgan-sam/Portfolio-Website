@@ -1,11 +1,11 @@
 import React from 'react';
-import FadeIn from './FadeIn';
+import OnVisible from './OnVisible';
 
 const AboutCard = (props) => {
 	const { title, text } = props;
 
 	return (
-		<FadeIn className={'card'} delay={0}>
+		<OnVisible effect={'fade-in'} className={'card'} delay={0}>
 			<div className={'cardTitle'}>{title}</div>
 			<div className={'cardText'}>
 				{Array.isArray(text) ? (
@@ -19,7 +19,7 @@ const AboutCard = (props) => {
 				)}
 				<div className={'cardFadeOverlay'} />
 			</div>
-		</FadeIn>
+		</OnVisible>
 	);
 };
 

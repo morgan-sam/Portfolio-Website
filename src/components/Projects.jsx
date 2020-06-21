@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import FadeIn from './FadeIn';
+import OnVisible from './OnVisible';
 import ProjectCard from './ProjectCard';
 import traintracks from '../img/traintracks.jpeg';
 import platform from '../img/platform.jpeg';
@@ -16,9 +16,9 @@ const Projects = React.forwardRef((props, ref) => {
 
 	return (
 		<div className={'section projectSection'} ref={ref}>
-			<FadeIn>
+			<OnVisible effect={'fade-in'}>
 				<div className={'projectTitle'}>Projects</div>
-			</FadeIn>
+			</OnVisible>
 			<div className={'projectContainer'}>
 				<ProjectCard
 					fadeDelay={0}

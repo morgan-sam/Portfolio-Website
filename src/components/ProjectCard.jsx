@@ -1,11 +1,15 @@
 import React from 'react';
-import FadeIn from './FadeIn';
+import OnVisible from './OnVisible';
 
 const ProjectCard = (props) => {
 	const { fadeDelay, className, title, img, live, source, focused, setFocused, mobileView } = props;
 
 	return (
-		<FadeIn className={`projectSubContainer ${focused === className ? 'focused' : null}`} delay={fadeDelay}>
+		<OnVisible
+			effect={'fade-in'}
+			className={`projectSubContainer ${focused === className ? 'focused' : null}`}
+			delay={fadeDelay}
+		>
 			<div className={'projectSubHeading'}>{title}</div>
 			<div
 				className={`projectImg ${className}`}
@@ -19,7 +23,7 @@ const ProjectCard = (props) => {
 				{live && source && ' / '}
 				{source && <a href={source}>Source Code</a>}
 			</div>
-		</FadeIn>
+		</OnVisible>
 	);
 };
 

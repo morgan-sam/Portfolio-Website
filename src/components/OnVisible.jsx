@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-const FadeIn = (props) => {
+const OnVisible = (props) => {
 	const { delay } = props;
 	const [ visible, setVisible ] = useState(false);
 	const ref = useRef();
@@ -18,10 +18,10 @@ const FadeIn = (props) => {
 	);
 
 	return (
-		<div className={`${props.className} fade-in ${visible ? 'visible' : ''}`} ref={ref}>
+		<div className={`${props.className} ${props.effect} ${visible ? 'visible' : ''}`} ref={ref}>
 			{props.children}
 		</div>
 	);
 };
 
-export default FadeIn;
+export default OnVisible;

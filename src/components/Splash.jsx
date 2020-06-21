@@ -1,17 +1,17 @@
 import React from 'react';
-import FadeIn from './FadeIn';
+import OnVisible from './OnVisible';
 
 const Splash = React.forwardRef((props, ref) => {
 	return (
 		<div className={'section'} ref={ref}>
-			<FadeIn>
+			<OnVisible effect={'fade-in'}>
 				<div className={'splashTitle'}>
 					<span>Sam Morgan</span>
 					<span>UK/USA</span>
 					<span>Front End</span>
 					<span>Developer</span>
 				</div>
-			</FadeIn>
+			</OnVisible>
 			<div className={'splashBackground'} />
 		</div>
 	);
