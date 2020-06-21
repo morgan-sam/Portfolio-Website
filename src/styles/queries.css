@@ -190,6 +190,9 @@
 	.cardTitle {
 		text-decoration: none;
 	}
+	.card {
+		border: none;
+	}
 
 	.cardContainer > *:nth-child(3) > .cardText {
 		font-size: 1rem;
