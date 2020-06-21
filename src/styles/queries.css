@@ -62,6 +62,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+	body {
+		font-family: 'Raleway', sans-serif;
+	}
 	.hamburger {
 		display: inline;
 	}
@@ -112,7 +115,6 @@
 		text-align: center;
 		font-size: 1.5rem;
 		height: 61vh;
-		font-family: 'Raleway', sans-serif;
 	}
 	.splashTitle *:nth-child(1) {
 		display: block;
@@ -136,6 +138,18 @@
 		background-color: rgba(45, 13, 82, 0.7);
 		transform: scale(1, 1);
 	}
+
+	.cardTitle {
+		text-decoration: none;
+	}
+
+	.cardContainer > *:nth-child(3) > .cardText {
+		font-size: 1rem;
+	}
+
+	.projectTitle {
+		text-decoration: none;
+	}
 	.projectImg {
 		height: 10rem;
 	}
@@ -145,5 +159,16 @@
 	}
 	.projectSubHeading {
 		white-space: normal;
+		text-decoration: none;
+	}
+	.linkTextStyle > * {
+		text-decoration: none;
+	}
+	.contactText > * {
+		text-decoration: none;
+	}
+	a {
+		color: blue;
+		border-bottom: 1px solid blue;
 	}
 }
