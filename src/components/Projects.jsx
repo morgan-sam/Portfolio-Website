@@ -22,26 +22,23 @@ const Projects = React.forwardRef((props, ref) => {
 			<div className={'projectContainer'}>
 				<ProjectCard
 					fadeDelay={0}
-					className={'platformImg'}
+					className={'platform'}
 					title={'Project Management Platform'}
-					img={platform}
 					source={'https://github.com/morgan-sam/Project-Management-Platform'}
 					{...cardCommonProps}
 				/>
 				<ProjectCard
 					fadeDelay={200}
-					className={'traintracksImg'}
+					className={'traintracks'}
 					title={'Train Tracks Game'}
-					img={traintracks}
 					live={'https://morgan-sam.github.io/Train-Tracks-React/'}
 					source={'https://github.com/morgan-sam/Train-Tracks-React'}
 					{...cardCommonProps}
 				/>
 				<ProjectCard
 					fadeDelay={400}
-					className={'pomodoroImg'}
+					className={'pomodoro'}
 					title={'Pomodoro Tracker'}
-					img={pomodoro}
 					source={'https://github.com/morgan-sam/Pomodoro-Tracker'}
 					{...cardCommonProps}
 				/>

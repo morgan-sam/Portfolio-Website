@@ -36,10 +36,16 @@
 	background-size: cover;
 	transform-origin: left center;
 }
-
-.traintracksImg {
+.projectImg.platform {
+	background-image: url('../img/platform.jpeg');
+}
+.projectImg.traintracks {
+	background-image: url('../img/traintracks.jpeg');
 	background-position: center center;
 	transform-origin: center center;
+}
+.projectImg.pomodoro {
+	background-image: url('../img/pomodoro.jpeg');
 }
 
 .projectContainer {
