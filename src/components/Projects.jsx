@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import OnVisible from './OnVisible';
 import ProjectCard from './ProjectCard';
-import traintracks from '../img/traintracks.jpeg';
-import platform from '../img/platform.jpeg';
-import pomodoro from '../img/pomodoro.jpeg';
 
 const Projects = React.forwardRef((props, ref) => {
 	const [ focused, setFocused ] = useState(null);
