@@ -216,6 +216,7 @@
 
 	.projectImg.platform {
 		height: 20rem;
+		border-radius: 1rem;
 	}
 	.projectImg.traintracks {
 		height: 15rem;
@@ -224,6 +225,7 @@
 		transform: scale(2);
 		margin: 5rem;
 		clip-path: polygon(10% 10%, 90% 10%, 90% 90%, 10% 90%);
+		border-radius: 100%;
 	}
 	.projectImg.pomodoro {
 		width: 315px;
@@ -231,6 +233,7 @@
 		object-fit: cover;
 		border-right: 1rem solid white;
 		margin: 0;
+		border-radius: 2rem;
 	}
 
 	.projectSubContainer {
