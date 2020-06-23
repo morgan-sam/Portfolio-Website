@@ -214,10 +214,14 @@
 		text-decoration: none;
 	}
 
+	.projectContainer {
+		width: 100vw;
+	}
 	.projectImg {
 		width: 19rem;
 		height: 19rem;
 		border-radius: 1rem;
+		box-shadow: 0.35rem 0.35rem 1rem -2px #888;
 	}
 	.projectImg.platform,
 	.projectImg.pomodoro {
