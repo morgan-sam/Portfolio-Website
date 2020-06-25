@@ -259,15 +259,57 @@
 		text-decoration: none;
 	}
 
-	.contactImage {
+	@keyframes contact-image-alternate {
+		0% {
+			opacity: 0;
+		}
+		45% {
+			opacity: 0;
+		}
+		50% {
+			opacity: 1;
+		}
+		95% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	.contactImage:before,
+	.contactImage:after {
+		background-size: cover;
+		content: '';
+		display: block;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		transition: opacity 1s;
+	}
+	.contactImage:before {
+		background-image: url(https://images.unsplash.com/photo-1523612361257-94585d11ebe4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+		background-size: cover;
+		width: 100vw;
+		height: 100vh;
+		background-position: 7.5% 20%;
+		background-size: 170%;
+		animation: fade-in 2s ease-out;
+	}
+	.contactImage:after {
 		background-image: url(https://images.unsplash.com/photo-1543007368-ffc8f951f7f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
 		background-size: cover;
 		width: 100vw;
 		height: 100vh;
 		background-position: 47% 63%;
 		background-size: 250%;
+		opacity: 0;
+		animation: 20s ease-in-out 10s infinite forwards contact-image-alternate;
 	}
 	.contactContainer {
+		border-radius: 0;
 		background-color: transparent;
 	}
 	.contactText {
