@@ -275,17 +275,6 @@
 		color: white;
 		font-weight: 400;
 	}
-
-	.contactText > a > .linkText {
-		display: none;
-	}
-	.contactText > a > .linkImg {
-		display: block;
-		background-image: url('../img/github.png');
-		height: 3rem;
-		width: 3rem;
-		background-size: 100% 100%;
-	}
 }
 
 @media only screen and (max-width: 370px) {

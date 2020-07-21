@@ -14,14 +14,15 @@
 	justify-content: center;
 	flex-direction: column;
 	border-radius: 100%;
-	background-color: #fff;
+	background-color: transparent;
+	border: 2px solid white;
 }
 
 .contactText {
 	font-size: 1.3rem;
 	margin: 0.35rem;
 	text-align: center;
-	color: #444;
+	color: white;
 }
 
 .contactImage {
@@ -32,10 +33,16 @@
 	background-color: rgba(45, 13, 82, 0.7);
 	background-blend-mode: screen;
 	filter: brightness(0.8) saturate(2);
-
 	background-size: cover;
 }
 
-.contactText > a > .linkImg {
+.contactText > a > .linkText {
 	display: none;
+}
+.contactText > a > .linkImg {
+	display: block;
+	background-image: url('../img/github.png');
+	height: 3rem;
+	width: 3rem;
+	background-size: 100% 100%;
 }
