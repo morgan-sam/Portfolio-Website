@@ -27,16 +27,19 @@
 	transform: rotate(30deg) translate(-20%, 0%);
 }
 
-.splashBtn.navBtn {
+.splashBtn.navBtn,
+.contactBtn.navBtn {
 	color: white;
 	border: 1px solid white;
 	background-color: transparent;
 }
-.splashBtn.navBtn:hover {
+.splashBtn.navBtn:hover,
+.contactBtn.navBtn:hover {
 	color: black;
 	border: 1px solid white;
 }
-.splashBtn.navBtn:hover > .btnBackground {
+.splashBtn.navBtn:hover > .btnBackground,
+.contactBtn.navBtn:hover > .btnBackground {
 	background-color: white;
 }
 
@@ -64,17 +67,4 @@
 }
 .projectsBtn.navBtn:hover > .btnBackground {
 	background-color: #eee;
-}
-
-.contactBtn.navBtn {
-	color: #2b0e0e;
-	border: 1px solid #2b0e0e;
-	background-color: #efeeff;
-}
-.contactBtn.navBtn:hover {
-	color: #779ecb;
-	border: 1px solid #779ecb;
-}
-.contactBtn.navBtn:hover > .btnBackground {
-	background-color: #f6eded;
 }
