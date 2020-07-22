@@ -78,14 +78,19 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: auto;
 		background-color: rgba(100, 100, 100, 0.8);
-		transition: min-height 1s cubic-bezier(.21, 1, .07, .91);
-		min-height: 5rem;
+		transition: height 1s cubic-bezier(.21, 1, .07, .91);
 		overflow: hidden;
 	}
+	.mobile-hidden {
+		height: 0;
+		overflow: visible;
+	}
+	.mobile-visible {
+		height: 5.2rem;
+	}
 	.navigation.open {
-		min-height: 100%;
+		height: 100%;
 	}
 	.navBtnContainer {
 		flex-direction: column;
