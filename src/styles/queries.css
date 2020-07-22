@@ -266,6 +266,9 @@
 		height: 100vh;
 		background-position: 47% 63%;
 		background-size: 250%;
+		background-color: none;
+		background-blend-mode: normal;
+		filter: none;
 	}
 	.contactContainer {
 		border-radius: 0;
