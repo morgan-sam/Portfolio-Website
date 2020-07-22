@@ -31,8 +31,7 @@
 	background-color: rgba(45, 13, 82, 0.7);
 	background-blend-mode: screen;
 	filter: brightness(0.8) saturate(2);
-	background-size: 107% auto;
-
+	background-size: 105% auto;
 	background-position: 40% 0%;
 }
 
