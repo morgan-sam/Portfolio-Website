@@ -41,6 +41,10 @@
 }
 
 @media only screen and (max-width: 1000px) {
+	.contactImage {
+		background-size: cover;
+	}
+
 	.projectSubHeading {
 		width: 80%;
 	}
