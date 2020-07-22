@@ -5,6 +5,13 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
-}
+	/* Your site config here */
+	plugins: [
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				icon: `src/img/icon.png`
+			}
+		}
+	]
+};
