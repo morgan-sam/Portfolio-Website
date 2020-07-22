@@ -269,6 +269,8 @@
 	}
 	.contactContainer {
 		border-radius: 0;
+		border: none;
+		top: auto;
 		background-color: transparent;
 	}
 	.contactText {
