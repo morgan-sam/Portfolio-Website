@@ -36,6 +36,7 @@ const Projects = React.forwardRef((props, ref) => {
 					fadeDelay={400}
 					className={'pomodoro'}
 					title={'Pomodoro Tracker'}
+					live={'https://pomodorotracker.app/'}
 					source={'https://github.com/morgan-sam/Pomodoro-Tracker'}
 					{...cardCommonProps}
 				/>
