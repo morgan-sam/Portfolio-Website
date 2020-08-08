@@ -1,16 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import AboutCard from './AboutCard';
-import SkillLevel from './SkillLevel';
-
-const skillLevels = [
-	{ skill: 'Programming', level: 10 },
-	{ skill: 'Front End', level: 10 },
-	{ skill: 'Back End', level: 8 },
-	{ skill: 'Design', level: 8 },
-	{ skill: 'Photoshop', level: 8 }
-];
+import Contribution from './Contribution';
 
 const About = React.forwardRef((props, ref) => {
+	const [ osc, setOsc ] = useState([
+		{ name: 'Gatsby', url: 'https://api.github.com/repos/gatsbyjs/gatsby', stars: null }
+	]);
+
+	const getStarNum = async (url) => {
+		let response = await fetch(url, {
+			headers: {
+				Accept: 'application/vnd.github.preview'
+			}
+		});
+		const json = await response.json();
+		return json.stargazers_count;
+	};
+
+	const getAllStars = async () => Promise.all(osc.map(async (el) => ({ ...el, stars: await getStarNum(el.url) })));
+
+	useEffect(() => {
+		const init = async () => {
+			const all = await getAllStars();
+			setOsc(all);
+		};
+		init();
+	}, []);
+
 	return (
 		<div className={'section aboutSection'} ref={ref}>
 			<div className={'line'} />
@@ -23,10 +39,10 @@ const About = React.forwardRef((props, ref) => {
 					]}
 				/>
 				<AboutCard
-					title={'Skills'}
+					title={'Open Source'}
 					text={
 						<ul style={{ width: '100%', position: 'relative' }}>
-							{skillLevels.map((el, i) => <SkillLevel key={i} {...el} />)}
+							{osc.map((el, i) => <Contribution key={i} {...el} />)}
 						</ul>
 					}
 				/>
