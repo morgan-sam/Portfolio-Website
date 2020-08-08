@@ -39,7 +39,7 @@ const About = React.forwardRef((props, ref) => {
 					]}
 				/>
 				<AboutCard
-					title={'Open Source'}
+					title={'Open Source Contributions'}
 					text={
 						<ul style={{ width: '100%', position: 'relative' }}>
 							{osc.map((el, i) => <Contribution key={i} {...el} />)}
