@@ -46,6 +46,7 @@
 }
 .projectImg.pomodoro {
 	background-image: url('../img/pomodoro.jpeg');
+	transform-origin: center center;
 }
 
 .projectContainer {
