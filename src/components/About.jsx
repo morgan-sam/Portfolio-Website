@@ -4,6 +4,7 @@ import Contribution from './Contribution';
 
 const About = React.forwardRef((props, ref) => {
 	const [ osc, setOsc ] = useState([
+		{ name: 'Material-UI', url: 'https://api.github.com/repos/mui-org/material-ui', stars: null },
 		{ name: 'Gatsby', url: 'https://api.github.com/repos/gatsbyjs/gatsby', stars: null }
 	]);
 
