@@ -6,7 +6,14 @@ const Contact = React.forwardRef((props, ref) => {
       <div className={"contactImage"} />
       <div className={"contactContainer"}>
         <div className={"contactText"}>Contact</div>
-        <div className={"contactText"}>samuel_morgan_@outlook.com</div>
+        <div className={"contactText emailText"}>
+          samuel_morgan_@outlook.com
+        </div>
+        <div className={"contactText"}>
+          <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-website-f9e63.appspot.com/o/cv.pdf?alt=media&token=677f3256-3e24-4b49-81bc-b59f158a112a">
+            Curriculum Vitae
+          </a>
+        </div>
         <div className={"contactText"}>
           <a href="https://github.com/morgan-sam">
             <div className="linkText">https://github.com/morgan-sam</div>
@@ -14,7 +21,6 @@ const Contact = React.forwardRef((props, ref) => {
           </a>
         </div>
         <div className={"contactText"}>
-          {/* <a href="smorgan.dev/cv">Curriculum Vitae</a> */}
           <div>THANK YOU</div>
         </div>
         <div className={"contactText"}>© 2020</div>
