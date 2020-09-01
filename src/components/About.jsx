@@ -5,6 +5,11 @@ import Contribution from "./Contribution"
 const About = React.forwardRef((props, ref) => {
   const [osc, setOsc] = useState([
     {
+      name: "Electron",
+      url: "https://api.github.com/repos/electron/electron",
+      stars: null,
+    },
+    {
       name: "Material-UI",
       url: "https://api.github.com/repos/mui-org/material-ui",
       stars: null,
