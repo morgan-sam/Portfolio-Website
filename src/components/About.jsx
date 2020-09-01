@@ -71,7 +71,7 @@ const About = React.forwardRef((props, ref) => {
             "Using:",
             "HTML, CSS, JavaScript, React, PostgreSQL, Node, Webpack, Jest, Linux",
             "Also used:",
-            "Python, MongoDB, Bash",
+            "Python, MongoDB, Bash, Vue",
           ]}
         />
       </div>
