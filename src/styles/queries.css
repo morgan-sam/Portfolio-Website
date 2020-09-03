@@ -270,12 +270,15 @@
   .linkTextStyle > * {
     text-decoration: none;
   }
+  .contactText:first-child {
+    margin: 1rem;
+  }
   .contactText > * {
     font-size: 1rem;
     text-decoration: none;
   }
   .emailText {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .contactImage {
