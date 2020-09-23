@@ -17,7 +17,11 @@ const Contact = React.forwardRef((props, ref) => {
         <div className={"contactText"}>
           <a href="https://github.com/morgan-sam">
             <div className="linkText">https://github.com/morgan-sam</div>
-            <div className="linkImg" />
+            <div className="linkImg githubImg" />
+          </a>
+          <a href="https://linkedin.com/in/morgan-sam">
+            <div className="linkText">https://linkedin.com/in/morgan-sam</div>
+            <div className="linkImg linkedinImg" />
           </a>
         </div>
         <div className={"contactText"}>

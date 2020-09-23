@@ -17,6 +17,7 @@
 }
 
 .contactText {
+  display: flex;
   font-size: 1.3rem;
   margin: 0.35rem;
   text-align: center;
@@ -48,8 +49,15 @@
 }
 .contactText > a > .linkImg {
   display: block;
-  background-image: url("../img/github.png");
   height: 3rem;
   width: 3rem;
   background-size: 100% 100%;
+  margin: 0.5rem;
+}
+
+.githubImg {
+  background-image: url("../img/github.png");
+}
+.linkedinImg {
+  background-image: url("../img/linkedin.png");
 }
