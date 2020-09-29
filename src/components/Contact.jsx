@@ -1,5 +1,8 @@
 import React from "react"
 
+const CV_LINK =
+  "https://firebasestorage.googleapis.com/v0/b/portfolio-website-f9e63.appspot.com/o/cv.pdf?alt=media&token=0a70f3d9-f111-4441-9437-3c400d28873b"
+
 const Contact = React.forwardRef((props, ref) => {
   return (
     <div className={"section contactSection"} ref={ref}>
@@ -10,9 +13,7 @@ const Contact = React.forwardRef((props, ref) => {
           samuel_morgan_@outlook.com
         </div>
         <div className={"contactText"}>
-          <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-website-f9e63.appspot.com/o/cv.pdf?alt=media&token=677f3256-3e24-4b49-81bc-b59f158a112a">
-            Curriculum Vitae
-          </a>
+          <a href={CV_LINK}>Curriculum Vitae</a>
         </div>
         <div className={"contactText"}>
           <a href="https://github.com/morgan-sam">
