@@ -10,9 +10,9 @@ const Contact = React.forwardRef((props, ref) => {
         <div className={"contactText emailText"}>
           samuel_morgan_@outlook.com
         </div>
-        <div className={"contactText"}>
+        {/* <div className={"contactText"}>
           <a href={CV_LINK}>Curriculum Vitae</a>
-        </div>
+        </div> */}
         <div className={"contactText"}>
           <a href="https://github.com/morgan-sam">
             <div className="linkText">https://github.com/morgan-sam</div>
