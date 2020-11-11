@@ -1,80 +1,80 @@
 .projectSection {
-	background-color: #fbf3e5;
-	padding: 7rem;
-	box-sizing: border-box;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
+  background-color: #fbf3e5;
+  padding: 7rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .projectTitle {
-	margin-bottom: 7rem;
-	font-size: 2.4rem;
-	text-decoration-line: underline;
-	color: #444;
+  margin-bottom: 7rem;
+  font-size: 2.4rem;
+  text-decoration-line: underline;
+  color: #444;
 }
 
 .projectSubHeading {
-	white-space: nowrap;
-	text-align: center;
-	font-size: 2rem;
-	text-decoration-line: underline;
-	margin: 3rem;
-	color: #444;
-	transition: 1s;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration-line: underline;
+  margin: 3rem;
+  color: #444;
+  transition: 1s;
 }
 
 .projectImg {
-	display: block;
-	width: 100%;
-	height: 100%;
-	border: 1px solid #444;
-	margin: 0 4rem;
-	object-fit: cover;
-	transition: 1s;
-	cursor: pointer;
-	background-size: cover;
-	transform-origin: left center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #444;
+  margin: 0 4rem;
+  object-fit: cover;
+  transition: 1s;
+  cursor: pointer;
+  background-size: cover;
+  transform-origin: left center;
 }
 .projectImg.platform {
-	background-image: url('../img/platform.jpeg');
+  background-image: url("../img/platform.jpeg");
 }
 .projectImg.traintracks {
-	background-image: url('../img/traintracks.jpeg');
-	background-position: center center;
-	transform-origin: center center;
+  background-image: url("../img/traintracks.jpeg");
+  background-position: center center;
+  transform-origin: center center;
 }
-.projectImg.pomodoro {
-	background-image: url('../img/pomodoro.jpeg');
-	transform-origin: center center;
+.projectImg.dealsmate {
+  background-image: url("../img/dealsmate.jpeg");
+  transform-origin: center center;
 }
 
 .projectContainer {
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	width: 100%;
-	height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
 }
 
 .projectSubContainer {
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 100%;
-	margin: 3rem;
-	background-color: #eee;
-	border-radius: 2rem;
-	border: 2px solid #444;
-	transition: 1s;
-	width: 33%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin: 3rem;
+  background-color: #eee;
+  border-radius: 2rem;
+  border: 2px solid #444;
+  transition: 1s;
+  width: 33%;
 }
 
 .linkTextStyle {
-	white-space: nowrap;
-	text-align: center;
-	font-size: 2rem;
-	margin: 3rem;
-	transition: 1s;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem;
+  transition: 1s;
 }

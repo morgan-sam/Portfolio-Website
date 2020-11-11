@@ -239,7 +239,7 @@
     box-shadow: 0.35rem 0.35rem 1rem -2px #888;
   }
   .projectImg.platform,
-  .projectImg.pomodoro {
+  .projectImg.dealsmate {
     border: 1px solid black;
   }
   .projectImg.traintracks {
@@ -306,7 +306,7 @@
 }
 
 @media only screen and (max-width: 370px) {
-  .projectImg.pomodoro {
+  .projectImg.dealsmate {
     width: 280px;
     height: 15rem;
     box-sizing: border-box;
