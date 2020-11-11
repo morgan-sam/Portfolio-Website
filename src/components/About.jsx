@@ -71,12 +71,12 @@ const About = React.forwardRef((props, ref) => {
           }
         />
         <AboutCard
-          title={"Tech"}
+          title={"Tech Stack"}
           text={[
             "Using:",
-            "HTML, CSS, JavaScript, React, PostgreSQL, Node, Webpack, Jest, Linux",
-            "Also used:",
-            "Python, MongoDB, Bash, Vue",
+            "HTML, CSS, JavaScript, React, Jest, PostgreSQL, Node, Flask, Material UI",
+            "Ocassionally use:",
+            "Vue, MongoDB",
           ]}
         />
       </div>
