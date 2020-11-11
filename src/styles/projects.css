@@ -46,7 +46,7 @@
 }
 .projectImg.dealsmate {
   background-image: url("../img/dealsmate.jpeg");
-  transform-origin: center center;
+  transform-origin: center top;
 }
 
 .projectContainer {
