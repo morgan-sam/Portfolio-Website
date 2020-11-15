@@ -10,7 +10,7 @@ const Projects = React.forwardRef((props, ref) => {
     setFocused,
     mobileView:
       typeof window !== "undefined" &&
-      window.matchMedia("(max-width: 600px)").matches,
+      window.matchMedia("(max-width: 1400px)").matches,
   }
 
   return (

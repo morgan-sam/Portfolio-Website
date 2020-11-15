@@ -9,13 +9,21 @@
     padding: 2rem;
   }
   .projectContainer {
-    flex-direction: column;
+    flex-direction: row;
     transition: 0;
   }
   .projectSubContainer {
     width: 100%;
     height: 100%;
     transition: 0s;
+    margin: 0.5rem;
+  }
+  .projectSubHeading {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: normal;
   }
   .projectSubContainer.fade-in {
     transform: none;
@@ -50,6 +58,13 @@
     width: 80%;
   }
 
+  .projectContainer {
+    flex-direction: column;
+    width: 80vw;
+  }
+  .projectSubContainer {
+    margin: 2rem;
+  }
   .projectImg {
     margin: 0 auto;
     border: none;
