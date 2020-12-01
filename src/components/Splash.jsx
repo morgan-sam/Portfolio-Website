@@ -7,7 +7,6 @@ const Splash = React.forwardRef((props, ref) => {
       <OnVisible effect={"fade-in"}>
         <div className={"splashTitle"}>
           <span>Sam Morgan</span>
-          <span>UK/USA</span>
           <span>Full Stack</span>
           <span>Developer</span>
         </div>
