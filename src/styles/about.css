@@ -1,39 +1,40 @@
 :root {
-	--horizontal-card-gap: 50%;
-	--vertical-card-gap: 5rem;
+    --horizontal-card-gap: 50%;
+    --vertical-card-gap: 5rem;
 }
 
 .aboutSection {
-	background-color: #eee;
+    background-color: #eee;
 }
 
 .cardContainer {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	width: 50rem;
-	height: auto;
-	padding: var(--vertical-card-gap);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+    height: auto;
+    padding: var(--vertical-card-gap);
 }
 
 .line {
-	position: absolute;
-	height: 50%;
-	width: 5px;
-	background-color: #444;
+    position: absolute;
+    height: 50%;
+    width: 5px;
+    background-color: #444;
 }
 
 .card {
-	width: 17rem;
-	height: 17rem;
-	position: absolute;
+    width: 17rem;
+    height: 17rem;
+    position: absolute;
 }
 
 .card:nth-child(odd) {
-	margin: calc(var(--vertical-card-gap) * -1) 0 calc(var(--vertical-card-gap) * -1) var(--horizontal-card-gap);
+    margin: calc(var(--vertical-card-gap) * -1) 0
+        calc(var(--vertical-card-gap) * -1) var(--horizontal-card-gap);
 }
 .card:nth-child(even) {
-	margin: 0 var(--horizontal-card-gap) 0 0;
+    margin: 0 var(--horizontal-card-gap) 0 0;
 }

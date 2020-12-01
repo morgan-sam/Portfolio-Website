@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap");
 
 html {
-	font-family: "Ropa Sans", sans-serif;
-	overflow-x: hidden;
+    font-family: "Ropa Sans", sans-serif;
+    overflow-x: hidden;
 }
 
 .section {
-	position: relative;
-	height: 100vh;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 a {
-	color: rgb(0, 0, 150);
+    color: rgb(0, 0, 150);
 }

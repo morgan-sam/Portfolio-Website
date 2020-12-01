@@ -1,63 +1,63 @@
 .contactSection {
-  background-color: #f2f8fb;
+    background-color: #f2f8fb;
 }
 
 .contactContainer {
-  position: absolute;
-  padding: 6vh 2.5vw;
-  top: 16.5vh;
-  background-color: #efeeff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: transparent;
-  border: 6px double rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
+    position: absolute;
+    padding: 6vh 2.5vw;
+    top: 16.5vh;
+    background-color: #efeeff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    border: 6px double rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
 }
 
 .contactText {
-  display: flex;
-  font-size: 1.3rem;
-  margin: 0.35rem;
-  text-align: center;
-  color: white;
+    display: flex;
+    font-size: 1.3rem;
+    margin: 0.35rem;
+    text-align: center;
+    color: white;
 }
 
 .contactImage {
-  height: 100vh;
-  width: 100vw;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0),
-      rgba(45, 13, 82, 0.5)
-    ),
-    url(https://images.unsplash.com/photo-1553419231-a42f77b2fb96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&q=80);
-  background-color: rgba(45, 13, 82, 0.7);
-  background-blend-mode: screen;
-  filter: brightness(0.8) saturate(2);
-  background-size: 105% auto;
-  background-position: 40% 0%;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(45, 13, 82, 0.5)
+        ),
+        url(https://images.unsplash.com/photo-1553419231-a42f77b2fb96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&q=80);
+    background-color: rgba(45, 13, 82, 0.7);
+    background-blend-mode: screen;
+    filter: brightness(0.8) saturate(2);
+    background-size: 105% auto;
+    background-position: 40% 0%;
 }
 
 .contactText > a {
-  color: white;
-  border-color: white;
+    color: white;
+    border-color: white;
 }
 .contactText > a > .linkText {
-  display: none;
+    display: none;
 }
 .contactText > a > .linkImg {
-  display: block;
-  height: 3rem;
-  width: 3rem;
-  background-size: 100% 100%;
-  margin: 0.5rem;
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    background-size: 100% 100%;
+    margin: 0.5rem;
 }
 
 .githubImg {
-  background-image: url("../img/github.png");
+    background-image: url("../img/github.png");
 }
 .linkedinImg {
-  background-image: url("../img/linkedin.png");
+    background-image: url("../img/linkedin.png");
 }
