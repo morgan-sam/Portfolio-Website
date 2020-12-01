@@ -12,10 +12,6 @@
 }
 .splashTitle *:nth-child(3) {
     display: inline;
-    padding-right: 0.5rem;
-}
-.splashTitle *:nth-child(4) {
-    display: inline;
 }
 
 .splashBackground {

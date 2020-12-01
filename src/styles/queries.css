@@ -178,8 +178,7 @@
     }
     .splashTitle *:nth-child(1),
     .splashTitle *:nth-child(2),
-    .splashTitle *:nth-child(3),
-    .splashTitle *:nth-child(4) {
+    .splashTitle *:nth-child(3) {
         display: block;
         opacity: 0;
         padding: 1rem;
@@ -200,9 +199,6 @@
     }
     .splashTitle *:nth-child(3) {
         animation-delay: 3s;
-    }
-    .splashTitle *:nth-child(4) {
-        animation-delay: 3.5s;
     }
 
     .splashBackground {
