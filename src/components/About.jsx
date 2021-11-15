@@ -56,7 +56,7 @@ const About = React.forwardRef((props, ref) => {
                 <AboutCard
                     title={"Bio"}
                     text={[
-                        "I am a Front End Engineer who loves programming and solving problems.",
+                        "I am a Frontend Engineer who loves programming and solving problems.",
                         "I like to build software from scratch using minimal libraries."
                     ]}
                 />
@@ -64,7 +64,7 @@ const About = React.forwardRef((props, ref) => {
                     title={"Experience"}
                     text={[
                         "BlockFi",
-                        "Front End Engineer",
+                        "Frontend Engineer",
                         "January 2021 - Present",
                         "Tech Stack:",
                         "React, Redux, TypeScript, Styled Components, Jira"
