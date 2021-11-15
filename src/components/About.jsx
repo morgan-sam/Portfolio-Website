@@ -61,6 +61,16 @@ const About = React.forwardRef((props, ref) => {
                     ]}
                 />
                 <AboutCard
+                    title={"Experience"}
+                    text={[
+                        "BlockFi",
+                        "Front End Engineer",
+                        "January 2021 - Present",
+                        "Tech Stack:",
+                        "React, Redux, TypeScript, Styled Components, Jira"
+                    ]}
+                />
+                <AboutCard
                     title={"Open Source Contributions"}
                     text={
                         <ul style={{ width: "100%", position: "relative" }}>
@@ -69,15 +79,6 @@ const About = React.forwardRef((props, ref) => {
                             ))}
                         </ul>
                     }
-                />
-                <AboutCard
-                    title={"Tech Stack"}
-                    text={[
-                        "Using:",
-                        "HTML, CSS, JavaScript, React, Jest, PostgreSQL, Node, Flask, Material UI",
-                        "Ocassionally use:",
-                        "Vue, MongoDB"
-                    ]}
                 />
             </div>
         </div>
